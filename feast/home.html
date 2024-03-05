@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta elements-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--local css-->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="scrollAnim.css">
+    <!--local js-->
+    <script defer src="general.js"></script>
+    <script defer src="scrollAnim.js"></script>
+    <script defer src="navigation.js"></script>
+    <script defer src="home.js"></script>
+    <!--font awesome links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--tab elements-->
+    <link rel="shortcut icon" href="images/branding/favicon.webp" type="image/x-icon">
+    <title>Feast</title>
+</head>
+<body>
+    <nav>
+        <a href="home.html">
+            <img src="images/branding/feast_logo.webp" alt="" id="pc">
+            <img src="images/branding/feast_icon_logo.webp" alt="" id="mobile">
+        </a>
+    </nav>
+    <div id="nav_btn">
+        <div class="nb_bar"></div>
+        <div class="nb_bar"></div>
+        <div class="nb_bar"></div>
+    </div>
+    <div id="nav_menu" class="">
+        <a href="home.html" class="nav_link current"><h4>Home</h4></a>
+        <a href="menu.html" class="nav_link"><h4>Our Menus</h4></a>
+        <a href="events.html" class="nav_link"><h4>Events</h4></a>
+        <a href="about.html" class="nav_link"><h4>About us</h4></a>
+        <button class="cta full"><h4>Reservation</h4></button>
+    </div>
+
+    <main>
+        <section id="hero">
+            <div id="hero_logo">
+                <img src="images/branding/feast_logo.webp" alt="" id="hl_pc">
+                <img src="images/branding/feast_icon_logo.webp" alt="" id="hl_mobile">
+            </div>
+        </section>
+
+        <section id="about" class="sided bottomed topped horizontal">
+            <div class="hs_txt animated slide_up">
+                <h1>It's Not Just a Restaurant, It's an Experience!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi a maxime at repellat eaque nesciunt nulla rerum, ex voluptatum neque nisi harum vitae quisquam dicta, adipisci alias natus facere.</p>
+                <div class="hs_txt_ctas">
+                    <button class="cta full"><p>Make a Reservation</p></button>
+                    <a href="about.html" class="cta hollow"><p>More About us</p></a>
+                </div>
+            </div>
+            <img src="images/home/home-about.webp" alt="" class="hs_img animated slide_up">
+        </section>
+
+        <section id="menu" class="sided bottomed vertical">
+            <div class="vs_txt animated slide_up">
+                <h1>It's Not Just Food, It's Art!</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, corrupti cumque doloribus molestiae enim nam dicta commodi voluptate sit eligendi corporis, deserunt accusamus repellendus a? Neque sequi hic incidunt aperiam!</p>
+                <div class="vs_ctas">
+                    <a href="menu.html" class="cta full"><p>Visit Our Menus</p></a>
+                </div>
+            </div>
+            <div id="menu_carousel" class="animation_trigger">
+                <div class="menu_card mc_el slide_right">
+                    <img src="images/home/menu/apetizers.webp" alt="">
+                    <h3>Appetizers</h3>
+                </div>
+                <div class="menu_card mc_el slide_right">
+                    <img src="images/home/menu/lunch.webp" alt="">
+                    <h3>Lunch</h3>
+                </div>
+                <div class="menu_card mc_el slide_right">
+                    <img src="images/home/menu/dinner.webp" alt="">
+                    <h3>Dinner</h3>
+                </div>
+                <div class="menu_card mc_el slide_right">
+                    <img src="images/home/menu/drinks.webp" alt="">
+                    <h3>Drinks</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="sided bottomed horizontal">
+            <div class="hs_txt animated slide_up">
+                <h1>They're Not Just Events, They're Memories!</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis rem cupiditate possimus! Libero eum inventore explicabo, odit facere aperiam amet porro, nemo rem sit, voluptates commodi? Sunt, cupiditate. Molestias, commodi!</p>
+                <div class="hs_txt_ctas">
+                    <a href="events.html" class="cta full"><p>More About Events</p></a>
+                </div>
+            </div>
+            <img src="images/home/home-about.webp" alt="" class="hs_img animated slide_up">
+        </section>
+        
+        <section id="testimonials" class="sided bottomed">
+            <div id="testimonials_txt" class="animated slide_up">
+                <h1>Testimonials</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, distinctio voluptates eveniet iure rem eligendi natus quaerat explicabo sit commodi veritatis necessitatibus ullam culpa aut atque perspiciatis. Quos, modi magnam.</p>
+            </div>
+            <div id="testimonials_slider_holder" class="animated slide_up">
+                <div id="testimonials_slider">
+                    <div id="testimonial_cards">
+                        <div class="testimonial_card">
+                            <div class="tc_header">
+                                <img src="" alt="">
+                                <h4>John Doe 1</h4>
+                            </div>
+                            <p class="cmt_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptas tenetur ipsam architecto eum voluptatum? Autem pariatur incidunt, recusandae veritatis velit dignissimos dicta, ducimus dolorum, excepturi error suscipit cum minus?</p>
+                        </div>
+                        <div class="testimonial_card">
+                            <div class="tc_header">
+                                <img src="" alt="">
+                                <h4>John Doe 2</h4>
+                            </div>
+                            <p class="cmt_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, accusantium. Veritatis unde, voluptatem aspernatur earum aliquid beatae dicta officia adipisci possimus, molestiae eveniet! Veritatis, optio non natus magnam est nobis.</p>
+                        </div>
+                        <div class="testimonial_card">
+                            <div class="tc_header">
+                                <img src="" alt="">
+                                <h4>John Doe 3</h4>
+                            </div>
+                            <p class="cmt_content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ipsum saepe deserunt quae, natus, magni in autem amet, repellendus aliquid neque praesentium vitae accusamus? Deserunt quam velit quis doloribus ipsa.</p>
+                        </div>
+                        <div class="testimonial_card">
+                            <div class="tc_header">
+                                <img src="" alt="">
+                                <h4>John Doe 4</h4>
+                            </div>
+                            <p class="cmt_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis similique est nostrum quo magni recusandae velit aliquam, asperiores ea neque, dignissimos illum distinctio alias dicta non amet fugiat atque optio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="testimonials_nav">
+                    <div class="tn" id="testimonial_previous"><i class="fa-solid fa-chevron-left"></i></div>
+                    <div class="tn" id="testimonial_next"><i class="fa-solid fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="sided bottomed animated slide_up">
+            <div class="gallery_img">
+                <img src="images/A large spaciou 903c290d-d9fc-4518-840f-7e6921f14f80 (1).png" alt="">
+            </div>
+            <div class="gallery_img">
+                <img src="images/A large spaciou 903c290d-d9fc-4518-840f-7e6921f14f80 (1).png" alt="">
+            </div>
+            <div class="gallery_img">
+                <img src="images/A large spaciou 903c290d-d9fc-4518-840f-7e6921f14f80 (1).png" alt="">
+            </div>
+            <div class="gallery_img">
+                <img src="images/A large spaciou 903c290d-d9fc-4518-840f-7e6921f14f80 (1).png" alt="">
+            </div>
+            <div class="gallery_img">
+                <img src="images/A large spaciou 903c290d-d9fc-4518-840f-7e6921f14f80 (1).png" alt="">
+            </div>
+            <div class="gallery_img">
+                <img src="images/A large spaciou 903c290d-d9fc-4518-840f-7e6921f14f80 (1).png" alt="">
+            </div>
+        </section>
+
+        <section id="reservation" class="sided vertical animated fade_in">
+            <div class="vs_txt">
+                <h1>Enjoy the <img src="images/branding/feast_logo.webp" alt=""> Experience</h1>
+                <button class="cta full"><p>Make a Resrervation</p></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer_top">
+            <a href="home.html" id="footer_logo"><img src="images/branding/feast_logo.webp" alt=""></a>
+            <div id="footer_socials">
+                <a href="https://www.instagram.com/emrldagency" class="ft_social" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/emrldagency" class="ft_social" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <div class="ft_social"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="ft_social"><i class="fa-brands fa-pinterest-p"></i></div>
+            </div>
+        </div>
+    </footer>
+    <div id="watermark">
+        <p>&copy; 2024 EMRLD Agency. All rights reserved.</p>
+    </div>
+</body>
+</html>

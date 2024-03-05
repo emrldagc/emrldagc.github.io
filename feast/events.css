@@ -1,0 +1,9 @@
+/*header - start*/
+header{
+    background-image: url(images/events/events-banner.webp);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+/*header - end*/
