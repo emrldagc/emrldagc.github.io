@@ -133,19 +133,41 @@ nav.scrolled img{
 /*footer - start*/
 footer{
     padding: 5vw;
-}
-#footer_top{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 25px;
 }
 #footer_logo{
     width: 300px;
-    margin-bottom: 25px;
 }
 #footer_logo img{
     width: 100%;
+}
+
+#footer_sitemap{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer_link{
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    background-color: transparent;
+    border: 0;
+    transition: 0.25s;
+}
+.footer_link p{
+    margin: 0;
+}
+.footer_link.current, .footer_link:hover{
+    color: #d91a2d;
+}
+.footer_link.current{
+    font-family: "roboto bold";
 }
 
 #footer_socials{

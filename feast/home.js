@@ -181,24 +181,3 @@ TCardsElement.addEventListener("transitionend", () =>{
     //loop back to end
 })
 /*testimonials - end*/
-
-/*gallery - start*/
-const galleryImages = document.querySelectorAll(".gallery_img");
-galleryImages.forEach(element => {
-    let img = element.querySelector("img");
-    if(img.clientWidth > img.clientHeight){
-        img.style.height = "100%";
-    }
-    else if(img.clientWidth < img.clientHeight){
-        img.style.width = "100%";        
-    }
-    else{}
-});
-if(window.innerWidth < 400){
-    for (let i = 0; i < galleryImages.length-1; i++) {
-        if(i >= 3){
-            galleryImages[i].style.display = "none";
-        }
-    }
-}
-/*gallery - end*/

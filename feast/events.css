@@ -7,3 +7,121 @@ header{
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 /*header - end*/
+
+/*event sections - start*/
+.event_slider{
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    position: relative;
+}
+.event_slides{
+    width: 700%;
+    height: 100%;
+}
+.event_slides img{
+    width: calc(100%/7);
+    height: 100%;
+}
+.event_slides img:nth-child(1){
+    background-color: gray;   
+}
+.event_slides img:nth-child(2){
+    background-color: orange;   
+}
+.event_slides img:nth-child(3){
+    background-color: yellow;   
+}
+.event_slides img:nth-child(4){
+    background-color: green;   
+}
+.event_slides img:nth-child(5){
+    background-color: blue;   
+}
+.event_slider_nav{
+    height: 35px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.esn_bullet{
+    border: 2px solid #d91d2a;
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+}
+/*event sections - end*/
+
+/*event inquiry - start*/
+#event_inquiry{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#event_inquiry form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    gap: 15px;
+}
+.doubled_input, .singled_input{
+    border: 0;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+.doubled_input{
+    min-width: calc(50% - (15px/2) - 20px);
+}
+.singled_input{
+    min-width: calc(100% - 20px);
+}
+/*event inquiry - end*/
+
+/*bigger tablet styling*/
+@media(max-width:1025px){
+    /*event inquiry - start*/
+    #event_inquiry form{
+        width: 75%;
+    }
+    /*event inquiry - end*/
+}
+
+/*big tablet styling*/
+@media(max-width:825px){
+}
+
+/*regular tablet styling*/
+@media(max-width:775px){
+    /*event inquiry - start*/
+    #event_inquiry form{
+        width: 100%;
+    }
+    /*event inquiry - end*/
+}
+
+/*small tablet styling*/
+@media(max-width:625px){
+}
+
+/*big phone styling*/
+@media(max-width:450px){
+    /*event inquiry - start*/
+    .singled_input, .doubled_input{
+        min-width: calc(100% - 20px);
+    }
+    /*event inquiry - end*/
+}
+
+/*small phone styling*/
+@media(max-width:400px){
+}
+
+/*very narrow phones*/
+@media(max-width:300px){
+}

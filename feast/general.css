@@ -170,7 +170,8 @@ section.vertical{
 
 /*reservation - start*/
 #reservation{
-    height: 65vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     background-image: url(images/A\ large\ spaciou\ 903c290d-d9fc-4518-840f-7e6921f14f80\ \(1\).png);
     background-position: center;
     background-size: cover;
@@ -187,10 +188,10 @@ section.vertical{
 @media(max-width:1025px){
     /*general - start*/   
     section.topped{
-        padding-top: 15vh;
+        padding-top: 7.5vh;
     } 
     section.bottomed{
-        padding-bottom: 15vh;
+        padding-bottom: 10vh;
     }
     /*general - end*/
 
@@ -209,7 +210,7 @@ section.vertical{
     }
     .hs_img{
         width: 75%;
-        min-width: 75%;
+        min-width: none;
     }
     .hs_txt{
         display: flex;
@@ -228,13 +229,26 @@ section.vertical{
     
     /*reservation - start*/
     #reservation{
-        height: 35vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
     }
     /*reservation - end*/
 }
 
 /*big tablet styling*/
 @media(max-width:825px){
+    /*general - start*/   
+    section.bottomed{
+        padding-bottom: 15vh;
+    }
+    /*general - end*/
+
+    /*horizontal section - start*/
+    .hs_img{
+        width: 85%;
+        min-width: 85%;
+    }
+    /*horizontal section - end*/
 }
 
 /*regular tablet styling*/
@@ -251,8 +265,7 @@ section.vertical{
 
     /*horizontal section - start*/
     .hs_img{
-        width: 80%;
-        min-width: 80%;
+        width: 100%;
     }
     /*horizontal section - end*/
 }
@@ -271,12 +284,12 @@ section.vertical{
     }
     /*font - end*/
     
-    /*horizontal section - start*/
-    .hs_img{
-        width: 100%;
-        min-width: 100%;
+    /*reservation - start*/
+    #reservation{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
     }
-    /*horizontal section - end*/
+    /*reservation - end*/
 }
 
 /*small phone styling*/
@@ -306,11 +319,4 @@ section.vertical{
         font-size: 18px;
     }
     /*font - end*/
-    
-    /*horizontal section - start*/
-    .hs_img{
-        width: 100%;
-        min-width: 100%;
-    }
-    /*horizontal section - end*/
 }
