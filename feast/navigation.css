@@ -279,10 +279,10 @@ footer{
     #nav_menu{
         padding: 10vh 5vw;
         height: 80vh;
-        width: 80vw;
+        width: 90vw;
     }
     #nav_menu.on{
-        left: 10vw;
+        left: 0vw;
     }
     /*nav menu - end*/
 }
@@ -323,15 +323,6 @@ footer{
         display: none;
     }
     /*nav bar - end*/
-
-    /*nav menu - start*/
-    #nav_menu{
-        width: 90vw;
-    }
-    #nav_menu.on{
-        left: 0vw;
-    }
-    /*nav menu - end*/
 
     /*footer - start*/
     #footer_logo{

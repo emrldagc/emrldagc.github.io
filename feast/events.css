@@ -15,26 +15,27 @@ header{
     position: relative;
 }
 .event_slides{
-    width: 700%;
+    width: 1500%;
     height: 100%;
+    display: flex;
 }
 .event_slides img{
-    width: calc(100%/7);
+    width: calc(100%/15);
     height: 100%;
 }
-.event_slides img:nth-child(1){
+.first_image{
     background-color: gray;   
 }
-.event_slides img:nth-child(2){
+.second_image{
     background-color: orange;   
 }
-.event_slides img:nth-child(3){
+.third_image{
     background-color: yellow;   
 }
-.event_slides img:nth-child(4){
+.fourth_image{
     background-color: green;   
 }
-.event_slides img:nth-child(5){
+.fifth_image{
     background-color: blue;   
 }
 .event_slider_nav{
@@ -53,6 +54,10 @@ header{
     border-radius: 100%;
     width: 13px;
     height: 13px;
+    transition: 0.25s;
+}
+.esn_bullet:hover, .esn_bullet.current{
+    background-color: #d91d2a;
 }
 /*event sections - end*/
 
