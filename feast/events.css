@@ -50,14 +50,15 @@ header{
     gap: 8px;
 }
 .esn_bullet{
-    border: 2px solid #d91d2a;
+    border: 2px solid white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
     border-radius: 100%;
     width: 13px;
     height: 13px;
     transition: 0.25s;
 }
 .esn_bullet:hover, .esn_bullet.current{
-    background-color: #d91d2a;
+    background-color: white;
 }
 /*event sections - end*/
 
@@ -79,6 +80,7 @@ header{
     border: 0;
     background-color: #f5f5f5;
     padding: 10px;
+    margin: 0;
 }
 .doubled_input{
     min-width: calc(50% - (15px/2) - 20px);

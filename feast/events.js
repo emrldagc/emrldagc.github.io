@@ -105,16 +105,4 @@ for (let i = 0; i < eventSlidersObjs.length; i++){
         eventSlidersObjs[i].eventSlides.style.transition = ESTransition + "s";        
     }, 1);
 }
-
-//clamp the value of the slide id at the end of each transition
-for (let i = 0; i < eventSlidersObjs.length; i++) {
-    eventSlidersObjs[i].eventSlides.addEventListener("transitionend", () =>{
-        if(eventSlidersObjs[i].currentId > (eventSlidersObjs[i].baseline * 2 + 1)){
-            
-        }
-        else if(eventSlidersObjs[i].currentId < (eventSlidersObjs[i].baseline +1)){
-
-        }
-    })
-}
 /*event sliders - end*/

@@ -71,14 +71,17 @@ function startMnTouch(){
 }
 function endMnTouch(){
     if(MnTouchInteracting){
-        if(MnSlideLeft)
-            currentMenuId += Math.round(MnDeltaX/MPagesWidth);
-        else
-            currentMenuId -= Math.round(MnDeltaX/MPagesWidth);
+        if(MnSlideLeft != null){
+            if(MnSlideLeft)
+                currentMenuId += Math.round(MnDeltaX/MPagesWidth);
+            else
+                currentMenuId -= Math.round(MnDeltaX/MPagesWidth);
+        }
         selectMenu();
         menuPagesElement.classList.remove("touch_interacting");
         menuPagesElement.style.transition = MPTransition/2 + "s";
         MnTouchInteracting = false;
+        MnSlideLeft = null;
     }
 }
 menuPagesElement.addEventListener("pointerdown", () =>{startMnTouch();})
