@@ -57,6 +57,7 @@ header{
     width: 13px;
     height: 13px;
     transition: 0.25s;
+    cursor: pointer;
 }
 .esn_bullet:hover, .esn_bullet.current{
     background-color: white;

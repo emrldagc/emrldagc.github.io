@@ -31,6 +31,13 @@ function toggleRF(){
         reservationFormBcg.classList.remove("on");
     }
 }
+document.addEventListener('keydown', function(event) {
+    if (event.keyCode === 27) {
+        RFOn = false;
+        reservationForm.classList.remove("on");
+        reservationFormBcg.classList.remove("on");
+    }
+});
 reservationToggleBtns.forEach(element => {
     element.addEventListener("pointerdown", () =>{
         toggleRF();

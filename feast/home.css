@@ -135,6 +135,7 @@
 }
 .tn{
     padding: 15px 10px;
+    cursor: pointer;
 }
 #testimonials_nav i{
     font-size: 25px;
