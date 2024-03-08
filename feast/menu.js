@@ -124,4 +124,11 @@ MMToggleBtns.forEach(element => {
         } 
     })
 });
+document.addEventListener('keydown', function(event) {
+    if (event.keyCode === 27) {
+        MMOn = false;
+        menuModal.classList.remove("on");
+        MMBcg.classList.remove("on");
+    }
+});
 /*menu modal - end*/

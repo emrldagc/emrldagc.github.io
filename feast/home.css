@@ -1,6 +1,6 @@
 /*hero section - start*/
 #hero{
-    height: 95vh;
+    height: 100vh;
     background-image: url(images/A\ large\ spaciou\ 903c290d-d9fc-4518-840f-7e6921f14f80\ \(1\).png);
     background-size: cover;
     background-position: center;
@@ -103,6 +103,7 @@
     background-color: #efefef;
     padding: 25px;
     gap: 15px;
+    height: 250px;
     cursor: pointer;
 }
 .tc_header{
@@ -180,7 +181,7 @@
     /*testimonials - start*/
     #testimonials_txt{
         width: 100%;
-        min-width: 0%;
+        min-width: none;
     }
     /*testimonials - end*/
 }
@@ -260,10 +261,11 @@
         width: 100%;
     }
     #testimonials_slider{
-        height: 425px;
+        height: 400px;
     }
     .testimonial_card{
         width: 250px;
+        height: 350px;
     }
     /*testimonials - end*/
     

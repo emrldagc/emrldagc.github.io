@@ -1,6 +1,7 @@
 const reservationToggleBtns = document.querySelectorAll(".rf_toggle");
 const reservationForm = document.getElementById("reservation_form");
 const reservationFormBcg = document.getElementById("rf_background");
+//const reservationSlider = document.getElementById("rf_slider");
 const reservationSliderContent = document.getElementById("rf_slider_content");
 const reservationPagesElement = document.getElementById("rf_slides");
 const reservationPages = document.querySelectorAll(".rf_slide");
@@ -116,9 +117,9 @@ function endRFTouch(){
         RFSlideLeft = null;
     }
 }
-reservationSliderContent.addEventListener("pointerdown", () =>{startRFTouch();})
+reservationPagesElement.addEventListener("pointerdown", () =>{startRFTouch();})
 window.addEventListener("pointerup", () =>{endRFTouch();})
-window.addEventListener("pointermove", (e) =>{
+reservationSliderContent.addEventListener("pointermove", (e) =>{
     if(RFTouchInteracting){
         //calculate the distance between initial and current x position
         RFDeltaX = Math.abs(RFStartX - e.pageX);

@@ -103,6 +103,7 @@
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    touch-action: pan-y;
 }
 .rf_slide::-webkit-scrollbar {
     display: none;
