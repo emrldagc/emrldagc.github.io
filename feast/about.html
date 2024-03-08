@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="scrollAnim.css">
+    <link rel="stylesheet" href="reservation.css">
     <!--local js-->
     <script defer src="general.js"></script>
     <script defer src="scrollAnim.js"></script>
     <script defer src="navigation.js"></script>
+    <script defer src="reservation.js"></script>
     <script defer src="about.js"></script>
     <!--font awesome links-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -37,8 +39,90 @@
         <a href="menu.html" class="nav_link"><h4>Our Menus</h4></a>
         <a href="events.html" class="nav_link"><h4>Events</h4></a>
         <a href="about.html" class="nav_link current"><h4>About us</h4></a>
-        <button class="cta full"><h4>Reservation</h4></button>
+        <button class="cta full rf_toggle"><h4>Reservation</h4></button>
     </div>
+    <div id="rf_background" class="rf_toggle">
+    </div>
+    <section id="reservation_form" class="">
+        <button id="rf_exit" class="rf_toggle"><p>&#x2715;</p></button>
+        <div id="rf_header">
+            <h1>Make a Reservation</h1>
+        </div>
+        <form id="rf_slider">
+            <div id="rf_slider_content">
+                <div id="rf_slides">
+                    <div class="rf_slide">
+                        <h4>Table Information</h4>
+                        <div class="input_group">
+                            <div class="input_pair singled">
+                                <label for="rf_date"><p>Date</p></label>
+                                <input type="date" name="rf_date" id="rf_date">
+                            </div>
+                            <div class="input_pair doubled">
+                                <label for="rf_guests"><p>Guests</p></label>
+                                <input type="number" name="rf_guests" id="rf_date" placeholder="1 Guest" min="1" max="8">
+                            </div>
+                            <div class="input_pair doubled">
+                                <label for="rf_type"><p>Type</p></label>
+                                <select name="rf_type" id="rf_type">
+                                    <option value="rft_lunch"><p>Lunch</p></option>
+                                    <option value="rft_dinner"><p>Dinner</p></option>
+                                </select>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="rf_slide"></div>
+                    <div class="rf_slide">
+                        <h4>Personal Information</h4>
+                        <div class="input_group">
+                            <div class="input_pair doubled">
+                                <label for="rf_first_name"><p>First name</p></label>
+                                <input type="text" name="rf_first_name" id="rf_first_name" placeholder="John">                            
+                            </div>
+                            <div class="input_pair doubled">
+                                <label for="rf_last_name"><p>Last name</p></label>
+                                <input type="text" name="rf_last_name" id="rf_last_name" placeholder="Doe">                            
+                            </div>
+                            <div class="input_pair doubled">
+                                <label for="rf_email"><p>Email address</p></label>
+                                <input type="email" name="rf_email" id="rf_email" placeholder="email@service.com">                            
+                            </div>
+                            <div class="input_pair doubled">
+                                <label for="rf_phone"><p>Phone number</p></label>
+                                <input type="tel" name="rf_phone" id="rf_phone" placeholder="+1(123)4567890">                            
+                            </div>                            
+                        </div>
+                        
+                        <h4>Credit Card Information</h4>
+                        <div class="input_group">
+                            <div class="input_pair doubled">
+                                <label for="rf_card_first_name"><p>Card first name</p></label>
+                                <input type="text" name="rf_card_first_name" id="rf_card_first_name" placeholder="Jhon">                            
+                            </div>
+                            <div class="input_pair doubled">
+                                <label for="rf_card_last_name"><p>Card last name</p></label>
+                                <input type="text" name="rf_card_last_name" id="rf_card_last_name" placeholder="Doe">                            
+                            </div>
+                            <div class="input_pair doubled">
+                                <label for="rf_card_number"><p>Card number</p></label>
+                                <input type="number" name="rf_card_number" id="rf_card_number" placeholder="1234 5678 9101 1121" min="111111111111" max="999999999999">                            
+                            </div>
+                            <div class="input_pair doubled">
+                                <label for="rf_card_date"><p>Purchase date</p></label>
+                                <input type="date" name="rf_card_date" id="rf_card_date" placeholder="">                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rf_slide"></div>
+                </div>
+            </div>
+            <div id="rf_nav">
+                <div id="rf_nav_previous" class="cta hollow"><p>Previous</p></div>
+                <div id="rf_nav_next" class="cta hollow"><p>Next</p></div>
+                <button id="rf_nav_submit" type="submit" class="cta full"><p>Submit</p></button>
+            </div>
+        </form>
+    </section>
 
     <main>
         <header>
@@ -136,7 +220,7 @@
             <a href="menu.html" class="footer_link"><p>Our Menus</p></a>
             <a href="events.html" class="footer_link"><p>Events</p></a>
             <a href="about.html" class="footer_link current"><p>About us</p></a>
-            <button class="footer_link rs_toggle"><p>Reservation</p></button>
+            <button class="footer_link rf_toggle"><p>Reservation</p></button>
         </div>
         <div id="footer_socials">
             <a href="https://www.instagram.com/emrldagency" class="ft_social" target="_blank"><i class="fa-brands fa-instagram"></i></a>

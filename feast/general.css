@@ -143,7 +143,12 @@ section.vertical{
     justify-content: center;
     align-items: center;
     transition: 0.25s;
+    user-select: none;
     text-decoration: none;
+}
+.cta.inactive{
+    opacity: 0.5;
+    pointer-events: none;
 }
 .cta h3, .cta h4, .cta h5, .cta p{
     margin: 0;
