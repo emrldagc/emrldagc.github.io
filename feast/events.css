@@ -18,6 +18,7 @@ header{
     width: 1500%;
     height: 100%;
     display: flex;
+    touch-action: pan-y;
 }
 .event_slides img{
     width: calc(100%/15);

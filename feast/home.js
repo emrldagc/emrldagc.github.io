@@ -41,8 +41,9 @@ const TAutoScrollInterval = 10000; //in milliseconds
 let touchInteraction = false;
 let startTTouchX;
 let deltaTTouchX = 0;
-let TSlideLeft = false;
+let TSlideLeft = null;
 let touchTMargin = 0;
+
 //auto scroll
 let TAutoScroll;
 function stopAutoScroll(){clearInterval(TAutoScroll)}
@@ -54,6 +55,7 @@ function restartAutoScroll(){
     stopAutoScroll();
     startAutoScroll();
 }
+
 //setup testimonoals slider
 function setupTestimonials(){
     //set the gap between the testimonial cards cards
@@ -73,6 +75,7 @@ function setupTestimonials(){
     selectTCard();
 }
 setupTestimonials();
+
 //select appropriate card according to the current card ID
 function selectTCard(){
     TCardMargin =  (-currentTCardId * TCardWidth) + ((-currentTCardId)*TCGap);
@@ -80,6 +83,7 @@ function selectTCard(){
     touchTMargin = TCardMargin;
     restartAutoScroll();
 }
+
 //touch controls
 function startTTouch(){
     let e = window.event;
@@ -99,16 +103,18 @@ function endTTouch(){
 
     if(touchInteraction){
         TCardsElement.style.transition = TCardsTransition/2 + "s";
-        if(TSlideLeft){
-            currentTCardId += (Math.round(deltaTTouchX/TCardWidth));
-            selectTCard();
+        if(TSlideLeft != null){
+            if(TSlideLeft){
+                currentTCardId += (Math.round(deltaTTouchX/TCardWidth));
+                selectTCard();
+            }
+            else{
+                currentTCardId -= (Math.round(deltaTTouchX/TCardWidth));
+                selectTCard();
+            }
         }
-        else{
-            currentTCardId -= (Math.round(deltaTTouchX/TCardWidth));
-            selectTCard();
-        }
-
         touchInteraction = false;
+        TSlideLeft = null;
     }
 }
 TCSlider.addEventListener("pointerdown", () =>{startTTouch();})
@@ -140,6 +146,7 @@ window.addEventListener("pointermove", (e) =>{
         }
     }
 })
+
 //button controls
 const TNextBtn = document.getElementById("testimonial_next");
 const TPreviousBtn =  document.getElementById("testimonial_previous");
