@@ -83,12 +83,13 @@ header{
     background-color: #f5f5f5;
     padding: 10px;
     margin: 0;
+    box-sizing: border-box;
 }
 .doubled_input{
-    min-width: calc(50% - (15px/2) - 20px);
+    width: calc(50% - (15px/2));
 }
 .singled_input{
-    min-width: calc(100% - 20px);
+    width: 100%;
 }
 /*event inquiry - end*/
 
