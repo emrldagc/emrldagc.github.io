@@ -69,6 +69,9 @@ header{
 .info_txt{
     width: calc(25% - (75px/4));
 }
+.info_txt a{
+    color: black;
+}
 /*info - end*/
 
 /*bigger tablet styling*/

@@ -11,6 +11,12 @@ const RFTransition = 1.25; //in seconds
 let currentRFId = 0;
 let RFMargin;
 let RFOn = false;
+//touch variables
+let RFTouchInteracting = false;
+let RFStartX;
+let RFSlideLeft = null;
+let RFDeltaX;
+let RFTouchMargin;
 
 //toggle reservation form
 function toggleRF(){
@@ -26,7 +32,7 @@ function toggleRF(){
     }
 }
 reservationToggleBtns.forEach(element => {
-    element.addEventListener("click", () =>{
+    element.addEventListener("pointerdown", () =>{
         toggleRF();
     })
 });
@@ -40,6 +46,7 @@ function selectRFPage(){
         currentRFId = 0;
     //set and apply margin
     RFMargin = -currentRFId * reservationSliderContent.clientWidth;
+    RFTouchMargin = RFMargin;
     reservationPagesElement.style.marginLeft = RFMargin + "px";
     //apply transition
     setTimeout(() => {
@@ -78,49 +85,42 @@ RFNavNext.addEventListener("pointerup", () =>{nextRFPage();})
 RFNavPrevious.addEventListener("pointerup", () =>{previousRFPage();})
 
 //touch naviation
-let RFTouchInteracting = false;
-let startRFX;
-let RFDeltaX;
-let RFSlideLeft = null;
-let RFTouchMargin = 0;
 function startRFTouch(){
     if(!RFTouchInteracting){
-        reservationPagesElement.classList.add("touch_interacting");
+        reservationSliderContent.classList.add("touch_interacting");
         reservationPagesElement.style.transition = "0s";
         let e = window.event;
-        startRFX = e.pageX;
+        RFStartX = e.pageX;
         RFTouchInteracting = true;
     }
 }
-function stopRFTouch(){
+function endRFTouch(){
     if(RFTouchInteracting){
-        reservationPagesElement.classList.remove("touch_interacting");
-        reservationPagesElement.style.transition = RFTransition/2 + "s";
         if(RFSlideLeft != null){
             if(RFSlideLeft)
                 currentRFId += Math.round(RFDeltaX/reservationPages[0].clientWidth);
             else
                 currentRFId -= Math.round(RFDeltaX/reservationPages[0].clientWidth);
         }
-        reservationPagesElement.style.transition = RFTransition/2 + "s";
         selectRFPage();
+        reservationSliderContent.classList.remove("touch_interacting");
+        reservationPagesElement.style.transition = RFTransition/2 + "s";
         RFTouchInteracting = false;
         RFSlideLeft = null;
     }
 }
-reservationPagesElement.addEventListener("pointerdown", () =>{startRFTouch();})
-window.addEventListener("pointerup", () =>{stopRFTouch();})
+reservationSliderContent.addEventListener("pointerdown", () =>{startRFTouch();})
+window.addEventListener("pointerup", () =>{endRFTouch();})
 window.addEventListener("pointermove", (e) =>{
     if(RFTouchInteracting){
-        //calculate the distance between initian and current x position
-        RFDeltaX = Math.abs(startRFX - e.pageX);
-        console.log(RFDeltaX)
-        //determine the sliding direction
-        if(startRFX > e.pageX)
+        //calculate the distance between initial and current x position
+        RFDeltaX = Math.abs(RFStartX - e.pageX);
+        //determine if sliding left or right
+        if(RFStartX > e.pageX)
             RFSlideLeft = true;
-        else if(startRFX < e.pageX)
+        else if(e.pageX > RFStartX)
             RFSlideLeft = false;
-        //move the pages element according to the sliding direction
+        //adjust the touch margin according to the scroll direction
         if(RFSlideLeft){
             RFTouchMargin = RFMargin - RFDeltaX;
             reservationPagesElement.style.marginLeft = RFTouchMargin + "px";

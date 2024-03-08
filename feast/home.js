@@ -1,9 +1,3 @@
-/*nav bar - start*/
-const homeSections = document.querySelectorAll("section");
-navScrollThreshold = homeSections[0].clientHeight - navBar.clientHeight;
-/*nav bar - end*/
-
-
 /*hero - start*/
 const heroLogo = document.getElementById("hero_logo");
 

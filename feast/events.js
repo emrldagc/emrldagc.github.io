@@ -1,7 +1,3 @@
-/*nav bar - start*/
-navScrollThreshold = document.querySelector("header").clientHeight - navBar.clientHeight;
-/*nav bar - end*/
-
 /*event sliders - start*/
 class eventSlider{
     constructor(eventSlides, eventNav, currentId, idBaseline, currentMargin){

@@ -1,7 +1,3 @@
-/*nav bar - start*/
-navScrollThreshold = document.querySelector("header").clientHeight - navBar.clientHeight;
-/*nav bar - end*/
-
 /*menu - start*/
 const menuSelectors = document.querySelectorAll(".menu_selector");
 const menuSelectorArr = Array.from(menuSelectors);
@@ -107,3 +103,25 @@ window.addEventListener("pointermove", (e) =>{
     }
 })
 /*menu - end*/
+
+/*menu modal - start*/
+const MMBcg = document.getElementById("mm_background");
+const menuModal = document.getElementById("menu_modal");
+const MMToggleBtns = document.querySelectorAll(".mi_btn");
+let MMOn = false;
+
+MMToggleBtns.forEach(element => {
+    element.addEventListener("click", () =>{
+        if(!MMOn){
+            MMOn = true;
+            menuModal.classList.add("on");
+            MMBcg.classList.add("on");
+        }   
+        else{
+            MMOn = false;
+            menuModal.classList.remove("on");
+            MMBcg.classList.remove("on");
+        } 
+    })
+});
+/*menu modal - end*/

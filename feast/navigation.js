@@ -1,6 +1,8 @@
 const navBar = document.querySelector("nav");
 const navBtn = document.getElementById("nav_btn");
 const navMenu = document.getElementById("nav_menu");
+let header = document.querySelector("header");
+let hero = document.getElementById("hero");
 let navScrollThreshold;
 let navMenuVisible = false
 
@@ -21,6 +23,16 @@ navBtn.addEventListener("click", () =>{
         navMenu.classList.remove("on");
     }
 })
+
+function setThreshold(){
+    if(hero != null){
+        navScrollThreshold = hero.clientHeight - navBar.clientHeight;
+    }
+    else if(hero == null && header != null){
+        navScrollThreshold = header.clientHeight - navBar.clientHeight;        
+    }
+}
+setThreshold();
 
 window.addEventListener("scroll", () =>{
         if(window.scrollY >= navScrollThreshold){
