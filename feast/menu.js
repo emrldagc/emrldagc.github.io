@@ -86,19 +86,22 @@ window.addEventListener("pointermove", (e) =>{
     if(MnTouchInteracting){
         //calculate the distance between initial and current x position
         MnDeltaX = Math.abs(MnStartX - e.pageX);
-        //determine if sliding left or right
-        if(MnStartX > e.pageX)
-            MnSlideLeft = true;
-        else if(e.pageX > MnStartX)
-            MnSlideLeft = false;
-        //adjust the touch margin according to the scroll direction
-        if(MnSlideLeft){
-            MnTouchMargin = MPMargin - MnDeltaX;
-            menuPagesElement.style.marginLeft = MnTouchMargin + "px";
-        }
-        else{
-            MnTouchMargin = MPMargin + MnDeltaX;
-            menuPagesElement.style.marginLeft = MnTouchMargin + "px";
+
+        if(MnDeltaX > 10){
+            //determine if sliding left or right
+            if(MnStartX > e.pageX)
+                MnSlideLeft = true;
+            else if(e.pageX > MnStartX)
+                MnSlideLeft = false;
+            //adjust the touch margin according to the scroll direction
+            if(MnSlideLeft){
+                MnTouchMargin = MPMargin - MnDeltaX;
+                menuPagesElement.style.marginLeft = MnTouchMargin + "px";
+            }
+            else{
+                MnTouchMargin = MPMargin + MnDeltaX;
+                menuPagesElement.style.marginLeft = MnTouchMargin + "px";
+            }
         }
     }
 })

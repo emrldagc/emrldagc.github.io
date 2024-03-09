@@ -135,25 +135,27 @@ class eventSlider{
             this.ESSLideLeft = null;
         }
     }
-    handleESTouch(event){
+    handleESTouch(){
         if(this.touchInteracting){
             let e = window.event;
             //calculate the distance between the initial x and the current x
             this.ESDeltaX = Math.abs(this.firstESX - e.pageX);
-            //determine sliding direction
-            if(this.firstESX > e.pageX)
-                this.ESSLideLeft = true;
-            else if(this.firstESX < e.pageX)
-                this.ESSLideLeft = false;
-
-            //adjust touch margin according to sliding direction
-            if(this.ESSLideLeft){
-                this.ESTouchMargin = this.currentMargin - this.ESDeltaX;
-                this.eventSlides.style.marginLeft = this.ESTouchMargin + "px";
-            }
-            else{
-                this.ESTouchMargin = this.currentMargin + this.ESDeltaX;
-                this.eventSlides.style.marginLeft = this.ESTouchMargin + "px";
+            if(this.ESDeltaX > 10){
+                //determine sliding direction
+                if(this.firstESX > e.pageX)
+                    this.ESSLideLeft = true;
+                else if(this.firstESX < e.pageX)
+                    this.ESSLideLeft = false;
+    
+                //adjust touch margin according to sliding direction
+                if(this.ESSLideLeft){
+                    this.ESTouchMargin = this.currentMargin - this.ESDeltaX;
+                    this.eventSlides.style.marginLeft = this.ESTouchMargin + "px";
+                }
+                else{
+                    this.ESTouchMargin = this.currentMargin + this.ESDeltaX;
+                    this.eventSlides.style.marginLeft = this.ESTouchMargin + "px";
+                }
             }
         }
     }

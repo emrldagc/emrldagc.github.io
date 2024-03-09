@@ -175,7 +175,7 @@
 @media(max-width:1025px){
     /*hero section - start*/
     #hero{
-        height: 80vh;
+        height: 90vh;
     }
     /*hero section - end*/
 
@@ -189,18 +189,6 @@
 
 /*big tablet styling*/
 @media(max-width:825px){
-    /*hero section - start*/
-    #hl_mobile{
-        display: block;
-        height: calc(width * 1.33333);
-    }
-    #hl_pc{
-        display: none;
-    }
-    #hero_logo{
-        filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
-    }
-    /*hero section - end*/
 
     /*menu - start*/
     .menu_card{
@@ -242,6 +230,18 @@
 
 /*small tablet styling*/
 @media(max-width:625px){
+    /*hero section - start*/
+    #hl_mobile{
+        display: block;
+        height: calc(width * 1.33333);
+    }
+    #hl_pc{
+        display: none;
+    }
+    #hero_logo{
+        filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+    }
+    /*hero section - end*/
 }
 
 /*big phone styling*/

@@ -297,26 +297,33 @@ footer{
 /*very narrow phones*/
 @media(max-width:300px){
     /*nav bar - start*/
+    nav{
+        padding: 15px 5vw;
+    }
     nav img{
-        height: 30px;
+        height: 25px;
     }
 
     #nav_btn{
-        width: 35px;
-        height: 30px;
+        width: 30px;
+        height: 25px;
     }
     .nb_bar{
-        width: 35px;
-        height: 4px;
+        width: 30px;
+        height: 3px;
     }
     .nb_bar:nth-child(1){
-        margin-bottom: 26px;
+        margin-bottom: 20px;
     }
     .nb_bar:nth-child(3){
-        margin-top: 26px;
+        margin-top: 20px;
     }
     #nav_btn.on .nb_bar, #nav_btn.on:hover .nb_bar{
-        width: 35px;
+        width: 30px;
+    }
+
+    #nav_btn:hover .nb_bar:nth-child(1), #nav_btn:hover .nb_bar:nth-child(2), #nav_btn:hover .nb_bar:nth-child(3){
+        width: 30px;
     }
     
     nav img#mobile{

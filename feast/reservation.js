@@ -123,19 +123,22 @@ reservationSliderContent.addEventListener("pointermove", (e) =>{
     if(RFTouchInteracting){
         //calculate the distance between initial and current x position
         RFDeltaX = Math.abs(RFStartX - e.pageX);
-        //determine if sliding left or right
-        if(RFStartX > e.pageX)
-            RFSlideLeft = true;
-        else if(e.pageX > RFStartX)
-            RFSlideLeft = false;
-        //adjust the touch margin according to the scroll direction
-        if(RFSlideLeft){
-            RFTouchMargin = RFMargin - RFDeltaX;
-            reservationPagesElement.style.marginLeft = RFTouchMargin + "px";
-        }
-        else{
-            RFTouchMargin = RFMargin + RFDeltaX;
-            reservationPagesElement.style.marginLeft = RFTouchMargin + "px";
+
+        if(RFDeltaX > 10){
+            //determine if sliding left or right
+            if(RFStartX > e.pageX)
+                RFSlideLeft = true;
+            else if(e.pageX > RFStartX)
+                RFSlideLeft = false;
+            //adjust the touch margin according to the scroll direction
+            if(RFSlideLeft){
+                RFTouchMargin = RFMargin - RFDeltaX;
+                reservationPagesElement.style.marginLeft = RFTouchMargin + "px";
+            }
+            else{
+                RFTouchMargin = RFMargin + RFDeltaX;
+                reservationPagesElement.style.marginLeft = RFTouchMargin + "px";
+            }
         }
     }
 })

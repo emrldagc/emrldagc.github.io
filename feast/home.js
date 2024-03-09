@@ -118,25 +118,27 @@ window.addEventListener("pointermove", (e) =>{
         //calculate difference of mouse X axis position
         deltaTTouchX = Math.abs(e.pageX - startTTouchX);
 
-        //determine if the slide was to the left or to the right
-        if(startTTouchX > e.pageX){
-            TSlideLeft = true;
-        }
-        else if(startTTouchX < e.pageX){
-            TSlideLeft = false;
-        }
-        else{
-            TSlideLeft = null;
-        }
-
-        //change the touch margin according to the slide direction
-        if(TSlideLeft){
-            touchTMargin = TCardMargin - deltaTTouchX;
-            TCardsElement.style.marginLeft = touchTMargin + "px";
-        }
-        else{
-            touchTMargin = TCardMargin + deltaTTouchX;
-            TCardsElement.style.marginLeft = touchTMargin + "px";
+        if(deltaTTouchX > 10){
+            //determine if the slide was to the left or to the right
+            if(startTTouchX > e.pageX){
+                TSlideLeft = true;
+            }
+            else if(startTTouchX < e.pageX){
+                TSlideLeft = false;
+            }
+            else{
+                TSlideLeft = null;
+            }
+    
+            //change the touch margin according to the slide direction
+            if(TSlideLeft){
+                touchTMargin = TCardMargin - deltaTTouchX;
+                TCardsElement.style.marginLeft = touchTMargin + "px";
+            }
+            else{
+                touchTMargin = TCardMargin + deltaTTouchX;
+                TCardsElement.style.marginLeft = touchTMargin + "px";
+            }
         }
     }
 })
