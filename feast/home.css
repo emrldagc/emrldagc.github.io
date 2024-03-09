@@ -44,6 +44,7 @@
     align-items: center;
 }
 .menu_card img{
+    position: relative;
     width: 100%;
     margin-bottom: 15px;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.125));
@@ -191,6 +192,7 @@
     /*hero section - start*/
     #hl_mobile{
         display: block;
+        height: calc(width * 1.33333);
     }
     #hl_pc{
         display: none;

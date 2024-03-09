@@ -28,6 +28,7 @@ header{
 }
 .staff_member img{
     transition: 0.5s;
+    height: 100%;
 }
 .staff_member:hover img{
     transform: scale(102.5%);
