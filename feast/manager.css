@@ -18,6 +18,9 @@
 #mn_page_selectors button p{
     margin: 0;
 }
+#mn_page_selectors button i{
+    display: none;
+}
 /*selector - end*/
 
 /*pages - start*/
@@ -31,14 +34,22 @@
     flex-wrap: nowrap;
     touch-action: pan-y;
 }
+#mn_slider.touch_interacting, #mn_slider.touch_interacting.mn_slide{
+    user-select: none;
+}
 .mn_slide{
     min-width: calc(100% - 25px);
     width: calc(100% - 25px);
     padding-left: 12.5px;
     padding-right: 12.5px;
-    min-height: 250px;
+    min-height: 500px;
     touch-action: pan-y;
     user-select: none;
+}
+
+.mn_slide h3{
+    text-align: center;
+    display: none;
 }
 
 .new_element{
@@ -88,3 +99,69 @@
     width: 100%;
 }
 /*pages - end*/
+
+/*bigger tablet styling*/
+@media(max-width:1025px){
+}
+
+/*big tablet styling*/
+@media(max-width:825px){  
+}
+
+/*regular tablet styling*/
+@media(max-width:775px){
+}
+
+/*small tablet styling*/
+@media(max-width:625px){
+    #manager{
+    padding-top: 10vh;
+    }
+}
+
+/*big phone styling*/
+@media(max-width:450px){
+    /*selector - start*/
+    #mn_page_selectors{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #mn_page_selectors button{
+        padding: 15px;
+        width: fit-content;
+    }
+    #mn_page_selectors button p{
+        display: none;
+    }
+    #mn_page_selectors button i{
+        display: block;
+        font-size: 32.5px;
+    }
+    /*selector - end*/
+
+    /*pages - start*/
+    .mn_slide h3{
+        display: block;
+    }
+    .doubled_input, .singled_input, .tripled_input{
+        width: 100%;
+    }
+    /*pages - end*/
+}
+
+/*small phone styling*/
+@media(max-width:400px){
+    #manager{
+    padding-top: 12.5vh;
+    }
+}
+
+/*very narrow phones*/
+@media(max-width:300px){
+    /*selector - start*/
+    #mn_page_selectors button i{
+        display: block;
+        font-size: 23.5px;
+    }
+    /*selector - end*/
+}

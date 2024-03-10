@@ -17,8 +17,8 @@ let MngTouchMargin;
 //page selection
 function selectMngPage(){
     //clamp current id value
-    if(currentMngPageId > MngSlides.length)
-        currentMngPageId = MngSlides.length;
+    if(currentMngPageId > MngSlides.length-1)
+        currentMngPageId = MngSlides.length-1;
     else if(currentMngPageId < 0)
         currentMngPageId = 0;
 
@@ -54,7 +54,7 @@ function startMngTouch(){
         MngTouchInteracting = true;
         //define initial pointer x position
         MngStartX = e.pageX;
-
+        MngSlider.classList.add("touch_interacting");
         MngSlider.style.transition = "0s";
     }
 }
@@ -69,6 +69,7 @@ function endMngTouch(){
         MngSlideLeft = null;
         MngSlider.style.transition = MngTransition/2 + "s";
         selectMngPage();
+        MngSlider.classList.remove("touch_interacting");
         MngTouchInteracting = false;
     }
 }

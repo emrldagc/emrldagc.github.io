@@ -77,6 +77,12 @@ header{
 
 /*bigger tablet styling*/
 @media(max-width:1025px){
+    /*staff - start*/
+    .staff_member{
+        width: calc(40% - (25px/2));
+    }
+    /*staff - end*/
+
     /*info - start*/
     .info_txt{
         width: calc(50% - (50px/2));
@@ -89,6 +95,15 @@ header{
     /*staff - start*/
     .staff_member{
         width: calc(45% - (25px/2));
+    }
+    /*staff - end*/ 
+}
+
+/*regular tablet styling*/
+@media(max-width:775px){
+    /*staff - start*/
+    .staff_member{
+        width: calc(50% - (25px/2));
     }
     /*staff - end*/ 
 }
