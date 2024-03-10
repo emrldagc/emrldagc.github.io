@@ -110,6 +110,15 @@ header{
 
 /*big phone styling*/
 @media(max-width:450px){
+    /*staff - start*/
+    #staff_carousel{
+        gap: 10px;
+    }
+    .staff_member{
+        width: calc(50% - (10px/2));
+    }
+    /*staff - end*/ 
+
     /*info - start*/
     .info_txt{
         width: 100%;
