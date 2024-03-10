@@ -39,7 +39,86 @@
 
     <main>
         <section id="manager" class="topped sided bottomed">
-
+            <div id="mn_page_selectors">
+                <button class="mn_page_selector"><p>Menu</p></button>
+                <button class="mn_page_selector"><p>Testimonials</p></button>
+                <button class="mn_page_selector"><p>Staff</p></button>
+                <button class="mn_page_selector"><p>Gallery</p></button>
+            </div>
+            <div id="mng_slider_holder">
+                <div id="mn_slider">
+                    <div class="mn_slide">
+                        <div class="new_element">
+                            <div class="ne_header">
+                                <h5>New menu item</h5>
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                            <div class="ne_content_holder">
+                                <form class="ne_content">
+                                    <input type="text" name="new_menu_name" id="new_menu_name" class="doubled_input" placeholder="Menu item name">
+                                    <input type="number" name="new_menu_price" id="new_menu_price" class="doubled_input" placeholder="Menu item price">
+                                    <input type="text" name="new_menu_img" id="new_menu_img" class="doubled_input" placeholder="Menu item image path">
+                                    <select name="new_menu_ctg" id="new_menu_ctg" class="doubled_input">
+                                        <option value="new_menu_ctg_appetizer"><p>Appetizer</p></option>
+                                        <option value="new_menu_ctg_lunch"><p>Lunch</p></option>
+                                        <option value="new_menu_ctg_dinner"><p>Dinner</p></option>
+                                        <option value="new_menu_ctg_drink"><p>Drink</p></option>
+                                    </select>
+                                    <textarea name="new_menu_description" id="new_menu_description" cols="30" rows="5" class="singled_input" placeholder="Menu item description"></textarea>
+                                    <textarea name="new_menu_ingredients" id="new_menu_ingredients" cols="30" rows="5" class="singled_input" placeholder="Menu item ingredients"></textarea>
+                                    <button type="submit" class="cta hollow"><p>Create element</p></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mn_slide">
+                        <div class="new_element">
+                            <div class="ne_header">
+                                <h5>New testimonial</h5>
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                            <div class="ne_content_holder">
+                                <form class="ne_content">
+                                    <input type="text" name="new_comment_name" id="new_comment_name" class="doubled_input" placeholder="Commentor's name">
+                                    <input type="text" name="new_comment_img" id="new_comment_img" class="doubled_input" placeholder="Commentor's profile picture's path">
+                                    <textarea name="new_comment_content" id="new_comment_content" cols="30" rows="5" class="singled_input" placeholder="Comment's content"></textarea>
+                                    <button type="submit" class="cta hollow"><p>Create element</p></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mn_slide">
+                        <div class="new_element">
+                            <div class="ne_header">
+                                <h5>New Staff Member</h5>
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                            <div class="ne_content_holder">
+                                <form class="ne_content">
+                                    <input type="text" name="new_staff_name" id="new_staff_name" class="tripled_input" placeholder="Staff member's name">
+                                    <input type="text" name="new_staff_position" id="new_staff_position" class="tripled_input" placeholder="Staff member's potition">
+                                    <input type="text" name="new_staff_img" id="new_staff_img" class="tripled_input" placeholder="Staff member's picture's path">
+                                    <button type="submit" class="cta hollow"><p>Create element</p></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mn_slide">
+                        <div class="new_element">
+                            <div class="ne_header">
+                                <h5>New Gallery Image</h5>
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </div>
+                            <div class="ne_content_holder">
+                                <form class="ne_content">
+                                    <input type="text" name="new_gallery_img" id="new_gallery_img" class="singled_input" placeholder="gallery image's path">
+                                    <button type="submit" class="cta hollow"><p>Create element</p></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 

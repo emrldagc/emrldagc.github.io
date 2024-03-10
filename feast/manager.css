@@ -1,0 +1,90 @@
+/*selector - start*/
+#mn_page_selectors{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+#mn_page_selectors button{
+    padding: 15px 0px;
+    border: 0;
+    width: 175px;
+    transition: 0.25s;
+}
+.mn_page_selector:hover, .mn_page_selector.current{
+    background-color: #d92a2d;
+    color: white;
+}
+#mn_page_selectors button p{
+    margin: 0;
+}
+/*selector - end*/
+
+/*pages - start*/
+#mng_slider_holder{
+    width: 100%;
+    overflow-x: hidden;
+}
+#mn_slider{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    touch-action: pan-y;
+}
+.mn_slide{
+    min-width: calc(100% - 25px);
+    width: calc(100% - 25px);
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    min-height: 250px;
+    touch-action: pan-y;
+    user-select: none;
+}
+
+.new_element{
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: #f3f3f3;
+}
+.ne_header{
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ne_header i{
+    rotate: 180deg;
+    transition: 0.5s;
+}
+.ne_header.on i{
+    rotate: 0deg;
+}
+.ne_content_holder{
+    height: 0;
+    overflow: hidden;
+}
+.ne_content{
+    padding: 12.5px;
+    width: calc(100% - 25px);
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 12.5px;
+}
+.doubled_input, .singled_input, .tripled_input{
+    box-sizing: border-box;
+    background-color: white;
+    padding: 10px;
+    border: 0;
+}
+.tripled_input{
+    width: calc(33.33333% - 25px/3);
+}
+.doubled_input{
+    width: calc(50% - 12.5px/2);
+}
+.singled_input{
+    width: 100%;
+}
+/*pages - end*/

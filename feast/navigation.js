@@ -53,8 +53,4 @@ function adjustNavOnScroll(){
             navBtn.classList.remove("scrolled");
         }
     }
-    else{
-        navBar.classList.add("scrolled");
-        navBtn.classList.add("scrolled");
-    }
 }
