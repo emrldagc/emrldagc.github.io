@@ -28,4 +28,14 @@ function createMI(){
     if(menuCreator != null){
         let newMI = new menuItem(CFName.value, CFPrice.value, CFImage.value, CFDesc.value, CFIngredients.value);
     }
+    updateMIDisplay();
 }
+
+function updateMIManagerList(){
+
+}
+
+function updateMIDisplay(){
+
+}
+updateMIDisplay();
