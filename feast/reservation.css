@@ -198,13 +198,10 @@
 
 /*big phone styling*/
 @media(max-width:450px){
-    #rf_background{
-        display: none;
-    }
     #reservation_form{
         top: 50vh;
         transform: translate(-50%, calc(-50% + 15px));
-        height: 100vh;
+        height: 90vh;
         width: 100%;
     }
 
