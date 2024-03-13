@@ -131,16 +131,23 @@
 }
 
 /*regular tablet styling*/
-@media(max-width:775px){
-    /*gallery - start*/
-    .gallery_img{
-        width: calc(50% - (25px/2));
-    }
-    /*gallery - end*/   
+@media(max-width:775px){  
 }
 
 /*big phone styling*/
-@media(max-width:450px){    
+@media(max-width:450px){ 
+    /*gallery - start*/
+    #gallery{
+        gap: 10px;
+    }
+    .gallery_img{
+        width: calc(50% - (10px/2));
+    }
+    /*gallery - end*/ 
+}
+
+/*smaller phone styling*/
+@media(max-width:375px){   
     /*gallery - start*/
     .gallery_img{
         width: 75%;

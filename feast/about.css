@@ -1,6 +1,6 @@
 /*header - start*/
 header{
-    background-image: url(images/A\ large\ spaciou\ 903c290d-d9fc-4518-840f-7e6921f14f80\ \(1\).png);
+    background-image: url(images/home/home_hero.webp);
     background-size: cover;
     background-position: center;
 }
@@ -132,6 +132,10 @@ header{
 
 /*small phone styling*/
 @media(max-width:400px){
+}
+
+/*smaller phone styling*/
+@media(max-width:375px){
     /*staff - start*/
     .staff_member{
         width: 75%;

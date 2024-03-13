@@ -1,7 +1,7 @@
 /*hero section - start*/
 #hero{
     height: 100vh;
-    background-image: url(images/A\ large\ spaciou\ 903c290d-d9fc-4518-840f-7e6921f14f80\ \(1\).png);
+    background-image: url(images/home/home_hero.webp);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -236,7 +236,6 @@
     #menu_carousel{
         gap: 10px;
     }
-    /*menu - start*/
     .menu_card{
         width: calc(50% - (10px/2) - 50px);
     }
@@ -245,6 +244,10 @@
 
 /*small phone styling*/
 @media(max-width:400px){
+}
+
+/*smaller phone styling*/
+@media(max-width:375px){
     /*menu - start*/
     .menu_card{
         width: calc(75% - 50px);
