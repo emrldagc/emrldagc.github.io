@@ -30,7 +30,8 @@ const blankGalleryImg = document.getElementById("black_gallery_img");
 
 //create new elements from creation form
 function createNewGi(){
-    let newGIObj = new galleryItem()
+    let newGIObj = new galleryItem(newGIImg.value);
+    galleryItems.push(newGIObj)
     updateGIManagerList();
     updateGIClientList();
 }
@@ -63,22 +64,24 @@ function updateGIManagerList(){
 }
 
 //update the list in the menu page
-function updateGIClientList(){   
-    for (let i = 0; i < 6; i++){
-        //update carousel
-        let clientGIEl = blankGalleryImg.cloneNode(true);
-        clientGIEl.id = "";
-        let clientGIElImg = clientGIEl.querySelector("img");
-        clientGIElImg.src = galleryItems[i].url;
-        gallerySection.append(clientGIEl);
-    }
-    for (let i = 0; i < galleryItems.length; i++){
-        //update slider
-        let clientGIObj = document.createElement("img");
-        clientGIObj.src = galleryItems[i].url;
-        GMSlidesClient.append(clientGIObj);
-    }
-    GIClientLoadingDone = true;
+function updateGIClientList(){ 
+    if(blankGalleryImg != null){
+        for (let i = 0; i < 6; i++){
+            //update carousel
+            let clientGIEl = blankGalleryImg.cloneNode(true);
+            clientGIEl.id = "";
+            let clientGIElImg = clientGIEl.querySelector("img");
+            clientGIElImg.src = galleryItems[i].url;
+            gallerySection.append(clientGIEl);
+        }
+        for (let i = 0; i < galleryItems.length; i++){
+            //update slider
+            let clientGIObj = document.createElement("img");
+            clientGIObj.src = galleryItems[i].url;
+            GMSlidesClient.append(clientGIObj);
+        }
+        GIClientLoadingDone = true;
+    }  
 }
 
 window.addEventListener("load", ()=>{
