@@ -64,7 +64,7 @@ function updateGIManagerList(){
 
 //update the list in the menu page
 function updateGIClientList(){   
-    for (let i = 0; i < 6; i++){
+    for (let i = 0; i < 9; i++){
         //update carousel
         let clientGIEl = blankGalleryImg.cloneNode(true);
         clientGIEl.id = "";
