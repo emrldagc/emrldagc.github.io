@@ -94,6 +94,7 @@
     overflow: hidden;
     width: calc(33.333% - (50px/3));
     aspect-ratio: 1/1;
+    cursor: pointer;
 }
 .gallery_img img{
     transition: 0.5s;
