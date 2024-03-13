@@ -156,6 +156,9 @@
 /*menu page - end*/
 
 /*gallery page - start*/
+#blank_gi{
+    display: none;
+}
 .gallery_item{
     width: calc(33.33333% - (50px/3));
     height: calc(height);

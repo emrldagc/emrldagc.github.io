@@ -35,7 +35,7 @@
 #gallery_slider{
     height: 90vh;
     width: calc(90vh * 1.33333);
-    background-color: gray;
+    overflow: hidden;
 }
 .gs_nav{
     position: absolute;
@@ -59,6 +59,25 @@
 .gs_nav:nth-child(2){
     left: 100%;
 }
+
+#gallery_slides{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    touch-action: pan-y;
+}
+#gallery_slides img{
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#gallery_slides img:nth-child(odd){
+    background-color: gray;
+}
+#gallery_slides img:nth-child(even){
+    background-color: white;
+}
 /*gallery modal - end*/
 
 /*gallery - start*/
@@ -67,6 +86,9 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
+}
+#black_gallery_img{
+    display: none;
 }
 .gallery_img{
     overflow: hidden;
