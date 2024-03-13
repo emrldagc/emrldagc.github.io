@@ -4,13 +4,13 @@ class galleryItem{
     }
 }
 let galleryItems = [
-    new galleryItem("images/A large spaciou 903c290d-d9fc-4518-840f-7e6921f14f80 (1).png"),
+    new galleryItem("images/home/home_hero.webp"),
     new galleryItem("images/events/private_dining/private_dining_1.webp"),
     new galleryItem("images/events/wedding/wedding_1.webp"),
     new galleryItem("images/events/gala/gala_1.webp"),
     new galleryItem("images/events/awards/awards_1.webp"),
     new galleryItem("images/events/wedding/wedding_1.webp"),
-    new galleryItem("images/A large spaciou 903c290d-d9fc-4518-840f-7e6921f14f80 (1).png"),
+    new galleryItem("images/home/home_hero.webp"),
     new galleryItem("images/events/private_dining/private_dining_1.webp"),
     new galleryItem("images/events/wedding/wedding_1.webp"),
     new galleryItem("images/events/gala/gala_1.webp"),
