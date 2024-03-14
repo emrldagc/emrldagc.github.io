@@ -126,15 +126,10 @@
 @media(max-width:825px){    
     /*gallery - start*/
     .gallery_img{
-        width: calc(45% - (25px/2));
+        width: calc(50% - (25px/2));
     }
     /*gallery - end*/   
 }
-
-/*regular tablet styling*/
-@media(max-width:775px){  
-}
-
 /*big phone styling*/
 @media(max-width:450px){ 
     /*gallery - start*/

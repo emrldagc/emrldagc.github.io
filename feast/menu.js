@@ -110,23 +110,51 @@ window.addEventListener("pointermove", (e) =>{
 /*menu modal - start*/
 const MMBcg = document.getElementById("mm_background");
 const menuModal = document.getElementById("menu_modal");
-const MMToggleBtns = document.querySelectorAll(".mi_btn");
+let MMToggleBtns;
 let MMOn = false;
 
-MMToggleBtns.forEach(element => {
-    element.addEventListener("click", () =>{
-        if(!MMOn){
-            MMOn = true;
-            menuModal.classList.add("on");
-            MMBcg.classList.add("on");
-        }   
-        else{
-            MMOn = false;
-            menuModal.classList.remove("on");
-            MMBcg.classList.remove("on");
-        } 
-    })
-});
+const MMName = document.getElementById("mm_name");
+const MMCategory = document.getElementById("mm_category");
+const MMPrice = document.getElementById("mm_price");
+const MMImage = document.getElementById("mm_img");
+const MMDescription = document.getElementById("mm_description");
+const MMIngredients = document.getElementById("mm_ingredients");
+
+function MIToggle(){
+    if(MILoadingFinished){
+        MMToggleBtns = document.querySelectorAll(".mi_btn");
+        MMToggleBtns.forEach(element => {
+            element.addEventListener("click", () =>{
+                if(!MMOn){
+                    MMOn = true;
+                    menuModal.classList.add("on");
+                    MMBcg.classList.add("on");
+                }   
+                else{
+                    MMOn = false;
+                    menuModal.classList.remove("on");
+                    MMBcg.classList.remove("on");
+                } 
+            })
+        });
+    }
+    else{
+        setTimeout(() => {
+            MIToggle();
+        }, 100);
+    }
+}
+MIToggle();
+
+function MMDisplay(menu_item){
+    MMName.innerHTML = menu_item.name;
+    MMCategory.innerHTML = menu_item.category;
+    MMPrice.innerHTML = menu_item.price;
+    MMImage.src = menu_item.image;
+    MMDescription.innerHTML = menu_item.description;
+    MMIngredients.innerHTML = menu_item.ingredients;
+}
+
 document.addEventListener('keydown', function(event) {
     if (event.keyCode === 27) {
         MMOn = false;

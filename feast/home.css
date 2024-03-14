@@ -185,18 +185,13 @@
 @media(max-width:825px){
     /*menu - start*/
     .menu_card{
-        width: calc(45% - (25px/2) - 50px);
+        width: calc(50% - (25px/2) - 50px);
     }
     /*menu - end*/  
 }
 
 /*regular tablet styling*/
 @media(max-width:775px){
-    /*menu - start*/
-    .menu_card{
-        width: calc(50% - (25px/2) - 50px);
-    }
-    /*menu - end*/ 
 }
 
 /*small tablet styling*/

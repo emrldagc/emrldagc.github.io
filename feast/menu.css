@@ -142,6 +142,9 @@ header{
     min-height: 500px;
 }
 
+#blank_cl_mi{
+    display: none;
+}
 .menu_item{
     width: calc(33.33333% - (50px/3) - 50px);
     padding: 25px;

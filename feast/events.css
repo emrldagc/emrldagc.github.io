@@ -102,8 +102,8 @@ header{
     /*event inquiry - end*/
 }
 
-/*regular tablet styling*/
-@media(max-width:775px){
+/*big tablet styling*/
+@media(max-width:825px){
     /*event inquiry - start*/
     #event_inquiry form{
         width: 100%;
