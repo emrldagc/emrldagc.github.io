@@ -138,3 +138,36 @@ for (let i = 0; i < newElements.length; i++) {
     NE.NEHeader.addEventListener("click", () =>{NE.toggleNE();})
 }
 /*new elements - end*/
+
+/*delete modal - start*/
+const deleteToggles = document.querySelectorAll(".delete_toggle");
+const deleteModal = document.getElementById("delete_modal");
+const DMConfirm = document.getElementById("dm_confirm");
+const DMRefuse = document.getElementById("dm_refuse");
+let DMOn = false;
+function toggleDM(del_parent, del_child){
+    if(!DMOn){
+        DMOn = true;
+        deleteModal.classList.add("on");
+        DMConfirm.addEventListener("click", () =>{
+            del_parent.removeChild(del_child);
+            DMOn = false;
+            deleteModal.classList.remove("on");
+        })
+        DMRefuse.addEventListener("click", () =>{
+            DMOn = false;
+            deleteModal.classList.remove("on");
+        })
+    }
+    else{
+        DMOn = false;
+        deleteModal.classList.remove("on");
+    }
+    document.addEventListener('keydown', function(event) {
+        if (event.keyCode === 27) {
+            DMOn = false;
+            deleteModal.classList.remove("on");
+        }
+    });
+}
+/*delete modal - end*/

@@ -26,7 +26,6 @@ const newMIPrice = document.getElementById("nmi_price");
 const newMIImg = document.getElementById("nmi_img");
 const newMIDesc = document.getElementById("nmi_desc");
 const newMIIng = document.getElementById("nmi_ing");
-
 //create new elements from creation form
 function createNewMi(){
     let newMIObj = new menuItem(newMIName.value, newMICategory.value, newMIPrice.value, newMIImg.value, newMIDesc.value, newMIIng.value);

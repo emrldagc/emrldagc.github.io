@@ -19,7 +19,7 @@ let GMTouchMargin;
 
 //setup gallery modal
 function setupGM(){
-    if(GIClientLoadingDone){
+    if(GILoadingFinished){
         GMSlides = galleryModal.querySelectorAll("img");
         galleryToggles = document.querySelectorAll(".gallery_toggle");
         //duplicate and add the appropriate slides
@@ -63,7 +63,7 @@ function setupGM(){
     }
     else{
         setTimeout(() => {
-            setupGM();            
+            setupGM();
         }, 100);
     }
 }

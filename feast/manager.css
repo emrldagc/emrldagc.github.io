@@ -196,6 +196,10 @@
     border: 0;
     padding: 0;
     transition: 0.25s;
+    pointer-events: none;
+}
+.gallery_item:hover .gi_btns button{
+    pointer-events: auto;
 }
 .gi_btns button:hover{
     color: #d92a2d;
@@ -205,6 +209,77 @@
     color: white;
 }
 /*gallery page - end*/
+
+/*gallery delete - start*/
+#delete_modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    padding: 25px;
+    width: 500px;
+    transition: 0.25s;
+    opacity: 0;
+    pointer-events: none;
+}
+#delete_modal.on{
+    opacity: 1;
+    pointer-events: auto;
+}
+#delete_modal h2{
+    text-align: center;
+}
+#dm_btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+/*gallery delete - end*/
+
+/*gallery edit - start*/
+#gallery_edit_modal{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    width: 60vw;
+    max-height: calc(90vh - 50px);
+    z-index: 60;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s;
+}
+#gallery_edit_modal.on{
+    opacity: 1;
+    pointer-events: auto;
+}
+#gallery_edit_modal h2{
+    text-align: center;
+}
+#gallery_edit_modal input{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+#gi_edit_btns{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+/*gallery edit - end*/
 
 /*bigger tablet styling*/
 @media(max-width:1025px){
