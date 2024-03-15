@@ -240,8 +240,8 @@
 }
 /*gallery delete - end*/
 
-/*gallery edit - start*/
-#gallery_edit_modal{
+/*edit modal - start*/
+.edit_modal{
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -253,12 +253,43 @@
     background-color: white;
     box-shadow: 0 0 15px rgba(0,0,0,0.25);
     width: 60vw;
-    max-height: calc(90vh - 50px);
-    z-index: 60;
+    z-index: 150;
     opacity: 0;
     pointer-events: none;
     transition: 0.25s;
 }
+.edit_modal.on{
+    opacity: 1;
+    pointer-events: auto;
+}
+.edit_modal h2{
+    text-align: center;
+}
+.edit_modal_content{
+    max-height: 75vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.edit_modal_content::-webkit-scrollbar {
+    display: none;
+}
+.edit_modal input, .edit_modal select, .edit_modal textarea{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.edit_modal_btns{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+/*edit modal - end*/
+
+/*gallery edit - start*/
 #gallery_edit_modal.on{
     opacity: 1;
     pointer-events: auto;

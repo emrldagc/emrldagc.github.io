@@ -8,7 +8,16 @@ header{
 }
 /*header - end*/
 
+/*introduction - start*/
+#event_intro .vs_txt p{
+    margin-bottom: 0;
+}
+/*introduction - end*/
+
 /*event sections - start*/
+.hs_txt p{
+    margin-bottom: 0;
+}
 .event_slider{
     aspect-ratio: 4/3;
     overflow: hidden;

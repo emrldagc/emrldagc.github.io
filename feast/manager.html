@@ -47,13 +47,34 @@
         </div>
     </div>
 
-    <div id="gallery_edit_modal">
+    <div id="gallery_edit_modal" class="edit_modal">
         <h2>Edit gallery element</h2>
         <input type="text" name="gi_edit_path" id="gi_edit_path">
         <input type="text" name="gi_edit_alt" id="gi_edit_alt">
-        <div id="gi_edit_btns">
+        <div class="edit_modal_btns">
             <button id="gi_edit_cancel" class="cta full"><p>Cancel</p></button>
             <button id="gi_edit_confirm" class="cta hollow"><p>Confirm</p></button>
+        </div>
+    </div>
+
+    <div id="menu_edit_modal" class="edit_modal">
+        <h2>Edit menu element</h2>
+        <div class="edit_modal_content">
+            <input type="text" name="mi_edit_name" id="mi_edit_name">
+            <input type="text" name="mi_edit_img" id="mi_edit_img">
+            <input type="text" name="mi_edit_price" id="mi_edit_price">
+            <select name="mi_edit_category" id="mi_edit_category">
+                <option value="appetizer"><p>Appetizer</p></option>
+                <option value="lunch"><p>Lunch</p></option>
+                <option value="dinner"><p>Dinner</p></option>
+                <option value="drink"><p>Drink</p></option>
+            </select>
+            <textarea name="mi_edit_desc" id="mi_edit_desc" cols="30" rows="3"></textarea>
+            <textarea name="mi_edit_ing" id="mi_edit_ing" cols="30" rows="5"></textarea>
+        </div>
+        <div class="edit_modal_btns">
+            <button id="mi_edit_cancel" class="cta full"><p>Cancel</p></button>
+            <button id="mi_edit_confirm" class="cta hollow"><p>Confirm</p></button>
         </div>
     </div>
 
@@ -110,8 +131,8 @@
                                     </div>
                                 </div>
                                 <div class="mi_btns">
-                                    <button class="edit_btn"><i class="fa-solid fa-pencil"></i></button>
-                                    <button class="delete_btn"><i class="fa-solid fa-trash"></i></button>
+                                    <button class="mi_edit"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="mi_delete"><i class="fa-solid fa-trash"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -146,6 +167,22 @@
         </section>
     </main>
 
+    <footer>
+        <a href="home.html" id="footer_logo"><img src="images/branding/feast_logo.webp" alt=""></a>
+        <div id="footer_sitemap">
+            <a href="home.html" class="footer_link"><p>Home</p></a>
+            <a href="menu.html" class="footer_link"><p>Our Menus</p></a>
+            <a href="events.html" class="footer_link"><p>Events</p></a>
+            <a href="about.html" class="footer_link"><p>About us</p></a>
+            <button class="footer_link rf_toggle"><p>Reservation</p></button>
+        </div>
+        <div id="footer_socials">
+            <a href="https://www.instagram.com/emrldagency" class="ft_social" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/emrldagency" class="ft_social" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <div class="ft_social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="ft_social"><i class="fa-brands fa-pinterest-p"></i></div>
+        </div>
+    </footer>
     <div id="watermark">
         <p>&copy; 2024 EMRLD Agency. All rights reserved.</p>
     </div>
