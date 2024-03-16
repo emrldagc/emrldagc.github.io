@@ -1,0 +1,53 @@
+Date : 2024-03-15 10:33:31
+Directory : c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code
+Total : 27 files,  4459 codes, 427 comments, 264 blanks, all 5150 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| CSS        |         10 |      1,951 |        241 |        137 |      2,329 |
+| JavaScript |         12 |      1,314 |        161 |         82 |      1,557 |
+| HTML       |          5 |      1,194 |         25 |         45 |      1,264 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                  | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                     |         27 |      4,459 |        427 |        264 |      5,150 |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                              | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\about.css          | CSS        |        105 |         24 |         10 |        139 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\about.html         | HTML       |        241 |          5 |         10 |        256 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\about.js           | JavaScript |          6 |          4 |          2 |         12 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\events.css         | CSS        |        107 |         17 |          6 |        130 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\events.html        | HTML       |        270 |          5 |          9 |        284 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\events.js          | JavaScript |        179 |         32 |         10 |        221 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\gallery.css        | CSS        |        127 |         18 |          7 |        152 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\gallery.js         | JavaScript |        151 |         14 |          6 |        171 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\general.css        | CSS        |        283 |         45 |         21 |        349 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\general.js         | JavaScript |          5 |          2 |          0 |          7 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\home.css           | CSS        |        206 |         32 |         17 |        255 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\home.html          | HTML       |        304 |          5 |         11 |        320 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\home.js            | JavaScript |        152 |         19 |         15 |        186 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\manager-gallery.js | JavaScript |        139 |         19 |         10 |        168 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\manager-menu.js    | JavaScript |        196 |         19 |         12 |        227 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\manager.css        | CSS        |        372 |         39 |         19 |        430 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\manager.html       | HTML       |        180 |          5 |          5 |        190 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\manager.js         | JavaScript |        148 |         19 |         10 |        177 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\menu.css           | CSS        |        225 |         30 |         18 |        273 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\menu.html          | HTML       |        199 |          5 |         10 |        214 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\menu.js            | JavaScript |        141 |         17 |          7 |        165 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\navigation.css     | CSS        |        294 |         29 |         20 |        343 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\navigation.js      | JavaScript |         49 |          3 |          4 |         56 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\reservation.css    | CSS        |        206 |          7 |         16 |        229 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\reservation.js     | JavaScript |        126 |         13 |          5 |        144 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\scrollAnim.css     | CSS        |         26 |          0 |          3 |         29 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\scrollAnim.js      | JavaScript |         22 |          0 |          1 |         23 |
+| Total                                                                                 |            |      4,459 |        427 |        264 |      5,150 |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

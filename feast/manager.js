@@ -145,13 +145,17 @@ const deleteModal = document.getElementById("delete_modal");
 const DMConfirm = document.getElementById("dm_confirm");
 const DMRefuse = document.getElementById("dm_refuse");
 let DMOn = false;
-function toggleDM(del_parent, del_child){
+function toggleDM(del_parent, del_child, array, obj){
     if(!DMOn){
         DMOn = true;
         deleteModal.classList.add("on");
         DMConfirm.addEventListener("click", () =>{
             del_parent.removeChild(del_child);
             DMOn = false;
+            
+            let index = array.indexOf(obj);
+            if(index > -1)
+                array.splice(index, 1)
             deleteModal.classList.remove("on");
         })
         DMRefuse.addEventListener("click", () =>{

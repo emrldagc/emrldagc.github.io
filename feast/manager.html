@@ -49,7 +49,7 @@
 
     <div id="gallery_edit_modal" class="edit_modal">
         <h2>Edit gallery element</h2>
-        <input type="text" name="gi_edit_path" id="gi_edit_path">
+        <input type="text" name="gi_edit_src" id="gi_edit_src">
         <input type="text" name="gi_edit_alt" id="gi_edit_alt">
         <div class="edit_modal_btns">
             <button id="gi_edit_cancel" class="cta full"><p>Cancel</p></button>
@@ -146,14 +146,14 @@
                             </div>
                             <div class="ne_content_holder">
                                 <div class="ne_content">
-                                    <input type="text" name="ngi_img" id="ngi_img" class="singled_input" placeholder="gallery image's path">
+                                    <input type="text" name="ngi_src" id="ngi_src" class="singled_input" placeholder="gallery image's path">
                                     <input type="text" name="ngi_alt" id="ngi_alt" class="singled_input" placeholder="gallery image's alt">
                                     <button type="submit" id="new_gi_btn" class="cta hollow"><p>Create element</p></button>
                                 </div>
                             </div>
                         </div>
-                        <div id="gallery_content" class="mn_slide_content">
-                            <div id="blank_gi" class="gallery_item">
+                        <div id="gallery_mn_content" class="mn_slide_content">
+                            <div id="blank_mn_gi" class="gallery_item">
                                 <img src="" alt="" draggable="false">
                                 <div class="gi_btns">
                                     <button class="gi_edit_btn"><i class="fa-solid fa-pencil"></i></button>
