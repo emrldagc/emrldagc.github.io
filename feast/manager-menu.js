@@ -1,52 +1,52 @@
 /*menu manager - start*/
 let menuItemObjs = [
     {
-        name : "appetizer item",
-        img : "images/home/menu/apetizers.webp",
+        name : "Golden Caviar Blini",
+        img : "images/menu_items/appetizers/golden_caviar_blini.webp",
         category : "appetizer",
-        price : "24.99",
-        desc : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias quaerat voluptas accusantium unde repellat sapiente officia quasi nisi fuga provident minus porro, libero facere animi? Dignissimos amet quam nulla similique.",
-        ingr : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi pariatur tenetur delectus obcaecati suscipit illum expedita hic, error, neque repudiandae officiis sapiente. Veniam est voluptates modi nemo? Maxime, suscipit eaque."
+        price : "94.99",
+        desc : "Delicate blini topped with premium golden caviar, offering a burst of exquisite flavors in every bite.",
+        ingr : "Golden caviar, blini, crème fraîche, chives."
     },
     {
-        name : "appetizer item",
-        img : "images/home/menu/apetizers.webp",
+        name : "Truffle Arancini",
+        img : "images/menu_items/appetizers/truffle_arcancini.webp",
         category : "appetizer",
-        price : "24.99",
-        desc : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias quaerat voluptas accusantium unde repellat sapiente officia quasi nisi fuga provident minus porro, libero facere animi? Dignissimos amet quam nulla similique.",
-        ingr : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi pariatur tenetur delectus obcaecati suscipit illum expedita hic, error, neque repudiandae officiis sapiente. Veniam est voluptates modi nemo? Maxime, suscipit eaque."
+        price : "64.99",
+        desc : "Crispy, golden arancini infused with the earthy aroma of black truffles, served with a velvety truffle aioli.",
+        ingr : "Arborio rice, black truffles, parmesan cheese, truffle oil, breadcrumbs."
     },
     {
-        name : "appetizer item",
-        img : "images/home/menu/apetizers.webp",
+        name : "Foie Gras Pâté",
+        img : "images/menu_items/appetizers/fois_gras_pate.webp",
         category : "appetizer",
-        price : "24.99",
-        desc : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias quaerat voluptas accusantium unde repellat sapiente officia quasi nisi fuga provident minus porro, libero facere animi? Dignissimos amet quam nulla similique.",
-        ingr : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi pariatur tenetur delectus obcaecati suscipit illum expedita hic, error, neque repudiandae officiis sapiente. Veniam est voluptates modi nemo? Maxime, suscipit eaque."
+        price : "84.99",
+        desc : "Silky smooth foie gras pâté, delicately seasoned and served with toasted brioche points for a luxurious start to your meal.",
+        ingr : "Foie gras, butter, shallots, cognac, spices, brioche."
     },
     {
-        name : "appetizer item",
-        img : "images/home/menu/apetizers.webp",
+        name : "Lobster Bisque",
+        img : "images/menu_items/appetizers/lobster_brisque.webp",
         category : "appetizer",
-        price : "24.99",
-        desc : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias quaerat voluptas accusantium unde repellat sapiente officia quasi nisi fuga provident minus porro, libero facere animi? Dignissimos amet quam nulla similique.",
-        ingr : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi pariatur tenetur delectus obcaecati suscipit illum expedita hic, error, neque repudiandae officiis sapiente. Veniam est voluptates modi nemo? Maxime, suscipit eaque."
+        price : "109.99",
+        desc : "A rich and creamy bisque infused with the essence of succulent lobster meat, finished with a hint of brandy and served with artisanal bread.",
+        ingr : "Lobster meat, cream, brandy, vegetables, herbs, spices."
     },
     {
-        name : "appetizer item",
-        img : "images/home/menu/apetizers.webp",
+        name : "Wagyu Beef Tartare",
+        img : "images/menu_items/appetizers/wagyu_beef_tartare.webp",
         category : "appetizer",
-        price : "24.99",
-        desc : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias quaerat voluptas accusantium unde repellat sapiente officia quasi nisi fuga provident minus porro, libero facere animi? Dignissimos amet quam nulla similique.",
-        ingr : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi pariatur tenetur delectus obcaecati suscipit illum expedita hic, error, neque repudiandae officiis sapiente. Veniam est voluptates modi nemo? Maxime, suscipit eaque."
+        price : "119.99",
+        desc : "Finely diced Wagyu beef, hand-mixed with capers, shallots, and a hint of Dijon mustard, served with quail egg yolk and crispy crostini.",
+        ingr : "Wagyu beef, capers, shallots, Dijon mustard, quail egg yolk, crostini."
     },
     {
-        name : "appetizer item",
-        img : "images/home/menu/apetizers.webp",
+        name : "Oysters Rockefeller",
+        img : "images/menu_items/appetizers/oyster_rockefeller.webp",
         category : "appetizer",
-        price : "24.99",
-        desc : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias quaerat voluptas accusantium unde repellat sapiente officia quasi nisi fuga provident minus porro, libero facere animi? Dignissimos amet quam nulla similique.",
-        ingr : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi pariatur tenetur delectus obcaecati suscipit illum expedita hic, error, neque repudiandae officiis sapiente. Veniam est voluptates modi nemo? Maxime, suscipit eaque."
+        price : "99.99",
+        desc : "Plump oysters topped with a rich blend of spinach, herbs, and Pernod liqueur, baked to perfection and served on a bed of rock salt.",
+        ingr : "Oysters, spinach, Pernod liqueur, herbs, breadcrumbs."
     },
     
     {
