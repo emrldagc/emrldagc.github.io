@@ -15,7 +15,7 @@ header{
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(1px);
-    z-index: 101;
+    z-index: 199;
     opacity: 0;
     pointer-events: none;
     transition: 0.5s;
@@ -36,7 +36,7 @@ header{
     height: calc(80vh - 10vh);
     width: calc(150vh - 10vh);
     padding: 5vh;
-    z-index: 102;
+    z-index: 200;
     opacity: 0;
     pointer-events: none;
     box-shadow: 1px 1px 5px rgba(0,0,0,0.25), -1px -1px 5px rgba(255,255,255,0.25);

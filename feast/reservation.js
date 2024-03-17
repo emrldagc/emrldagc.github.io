@@ -1,3 +1,33 @@
+/*menu - start*/
+const RFMenuSelectors = document.querySelectorAll(".rf_menu_selector");
+const RFMenuSelectorsArr = Array.from(RFMenuSelectors);
+const RFMenuSlides = document.getElementById("rf_menu_slides");
+let currentRFMenuId = 0;
+
+function selectRFMenuPage(){
+    //select the right menu selector
+    RFMenuSelectors[currentRFMenuId].classList.add("current");
+    //deselect the other menu selectors
+    let unselectedRFMenuSelectors = RFMenuSelectorsArr.filter((x, i) =>{
+        return i != currentRFMenuId;
+    })
+    unselectedRFMenuSelectors.forEach(element => {
+        element.classList.remove("current");
+    });
+
+    //animate the margin
+    RFMenuSlides.style.marginLeft = -currentRFMenuId * 100 + "%";
+}
+selectRFMenuPage();
+for (let i = 0; i < RFMenuSelectors.length; i++) {
+    RFMenuSelectors[i].addEventListener("click", () =>{
+        currentRFMenuId = i;
+        selectRFMenuPage();
+    })    
+}
+/*menu - end*/
+
+/*general - start*/
 const reservationToggleBtns = document.querySelectorAll(".rf_toggle");
 const reservationForm = document.getElementById("reservation_form");
 const reservationFormBcg = document.getElementById("rf_background");
@@ -18,7 +48,6 @@ let RFStartX;
 let RFSlideLeft = null;
 let RFDeltaX;
 let RFTouchMargin;
-
 //toggle reservation form
 function toggleRF(){
     if(!RFOn){
@@ -44,7 +73,6 @@ reservationToggleBtns.forEach(element => {
         toggleRF();
     })
 });
-
 //select correct reservation form page
 function selectRFPage(){
     //clamp current id value
@@ -75,7 +103,6 @@ function selectRFPage(){
         RFNavSubmit.classList.remove("inactive");
 }
 selectRFPage();
-
 //button navigation
 function nextRFPage(){
     if(currentRFId < reservationPages.length-1){
@@ -91,7 +118,6 @@ function previousRFPage(){
 }
 RFNavNext.addEventListener("pointerup", () =>{nextRFPage();})
 RFNavPrevious.addEventListener("pointerup", () =>{previousRFPage();})
-
 //touch naviation
 function startRFTouch(){
     if(!RFTouchInteracting){
@@ -142,3 +168,4 @@ reservationSliderContent.addEventListener("pointermove", (e) =>{
         }
     }
 })
+/*general - end*/

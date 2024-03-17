@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="scrollAnim.css">
     <link rel="stylesheet" href="reservation.css">
     <!--local js-->
+    <script defer src="manager-menu.js"></script>
     <script defer src="general.js"></script>
     <script defer src="scrollAnim.js"></script>
     <script defer src="navigation.js"></script>
@@ -41,6 +42,7 @@
         <a href="about.html" class="nav_link"><h4>About us</h4></a>
         <button class="cta full rf_toggle"><h4>Reservation</h4></button>
     </div>
+
     <div id="rf_background" class="rf_toggle">
     </div>
     <section id="reservation_form" class="">
@@ -71,7 +73,32 @@
                             </div>                            
                         </div>
                     </div>
-                    <div class="rf_slide"></div>
+                    <div class="rf_slide">
+                        <div id="rf_menu_nav">
+                           <div class="rf_menu_selector"><p>Appetizers</p></div>
+                           <div class="rf_menu_selector"><p>Lunch</p></div>
+                           <div class="rf_menu_selector"><p>Dinner</p></div>
+                           <div class="rf_menu_selector"><p>Drinks</p></div>
+                        </div>
+                        <div id="rf_menu_slides_holder">
+                            <div id="rf_menu_slides">
+                                <div id="appetizer_rf_page" class="rf_menu_slide">
+                                    <div id="blank_rf_mi" class="menu_rf_item">
+                                        <img src="images/home/menu/apetizers.webp" alt="">
+                                        <div class="rf_mi_txt">
+                                            <h2 class="rf_mi_name">Rf menu item</h2>
+                                            <p class="rf_mi_price">$44.99</p>
+                                            <p class="rf_mi_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores expedita vero natus maxime id velit quae dicta nam magni nesciunt aperiam, distinctio quam, tenetur perspiciatis, cum sunt facere! Aliquam, blanditiis.</p>
+                                            <div class="cta hollow mi_btn"><p>Learn more</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="lunch_rf_page" class="rf_menu_slide"></div>
+                                <div id="dinner_rf_page" class="rf_menu_slide"></div>
+                                <div id="drink_rf_page"  class="rf_menu_slide"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="rf_slide">
                         <h4>Personal Information</h4>
                         <div class="input_group">
@@ -113,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="rf_slide"></div>
+                    <divclass="rf_slide"></div>
                 </div>
             </div>
             <div id="rf_nav">
@@ -122,6 +149,20 @@
                 <button id="rf_nav_submit" type="submit" class="cta full"><p>Submit</p></button>
             </div>
         </form>
+    </section>
+
+    <div id="mm_background" class="mi_btn"></div>
+    <section id="menu_modal" class="">
+        <div id="mm_exit" class="mi_btn"><p>&#x2715;</p></div>
+        <img id="mm_img" src="" alt="">
+        <div id="menu_modal_text">
+            <h1 id="mm_name"></h1>
+            <h3 id="mm_category"></h3>
+            <h3 id="mm_price"></h3>
+            <p id="mm_description"></p>
+            <h2>Main ingredients : </h2>
+            <p id="mm_ingredients"></p>
+        </div>
     </section>
 
     <main>
