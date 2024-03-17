@@ -306,6 +306,27 @@
     #rf_nav{
         gap: 5px;
     }
+    
+    .menu_rf_item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu_rf_item img{
+        width: 80%;
+    }
+    .rf_mi_txt{
+        align-items: center;
+    }
+    .rf_mi_txt h2{
+        text-align: center;
+    }
+    .rf_mi_price{
+        text-align: center;
+    }
+    .rf_mi_description{
+        text-align: justify;
+        text-align-last: center;
+    }
 }
 
 /*small phone styling*/
