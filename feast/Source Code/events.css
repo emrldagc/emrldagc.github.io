@@ -33,21 +33,6 @@ header{
     width: calc(100%/15);
     height: 100%;
 }
-.first_image{
-    background-color: gray;   
-}
-.second_image{
-    background-color: orange;   
-}
-.third_image{
-    background-color: yellow;   
-}
-.fourth_image{
-    background-color: green;   
-}
-.fifth_image{
-    background-color: blue;   
-}
 .event_slider_nav{
     height: 35px;
     width: 100%;

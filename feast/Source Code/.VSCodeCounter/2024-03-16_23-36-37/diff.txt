@@ -1,0 +1,40 @@
+Date : 2024-03-16 23:36:37
+Directory : c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code
+Total : 13 files,  514 codes, 27 comments, 3 blanks, all 544 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |          4 |        236 |         29 |         -3 |        262 |
+| HTML       |          5 |        113 |          0 |          4 |        117 |
+| CSS        |          3 |        107 |         -2 |          3 |        108 |
+| JSON       |          1 |         58 |          0 |         -1 |         57 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                  | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                     |         13 |        514 |         27 |          3 |        544 |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                              | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\about.css          | CSS        |          1 |          0 |          0 |          1 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\about.html         | HTML       |         41 |          0 |          1 |         42 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\events.html        | HTML       |         41 |          0 |          2 |         43 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\gallery.css        | CSS        |         -3 |         -2 |          0 |         -5 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\galleryItems.json  | JSON       |         58 |          0 |         -1 |         57 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\home.html          | HTML       |         41 |          0 |          1 |         42 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\manager-gallery.js | JavaScript |        -48 |         11 |         -2 |        -39 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\manager-menu.js    | JavaScript |        257 |         11 |          3 |        271 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\manager.html       | HTML       |        -35 |          0 |          0 |        -35 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\menu.html          | HTML       |         25 |          0 |          0 |         25 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\menu.js            | JavaScript |          6 |          0 |         -3 |          3 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\reservation.css    | CSS        |        109 |          0 |          3 |        112 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\reservation.js     | JavaScript |         21 |          7 |         -1 |         27 |
+| Total                                                                                 |            |        514 |         27 |          3 |        544 |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
