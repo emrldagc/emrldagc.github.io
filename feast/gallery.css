@@ -117,18 +117,13 @@
 
     /*gallery - start*/
     .gallery_img{
-        width: calc(40% - (25px/2));
+        width: calc(50% - (25px/2));
     }
     /*gallery - end*/ 
 }
 
 /*big tablet styling*/
 @media(max-width:825px){    
-    /*gallery - start*/
-    .gallery_img{
-        width: calc(50% - (25px/2));
-    }
-    /*gallery - end*/   
 }
 /*big phone styling*/
 @media(max-width:450px){ 

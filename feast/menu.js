@@ -153,7 +153,7 @@ MIToggle();
 function MMDisplay(menu_item){
     MMName.innerHTML = menu_item.name;
     MMCategory.innerHTML = menu_item.category;
-    MMPrice.innerHTML = menu_item.price;
+    MMPrice.innerHTML = "$" + menu_item.price;
     MMImage.src = menu_item.img;
     MMDescription.innerHTML = menu_item.desc;
     MMIngredients.innerHTML = menu_item.ingr;

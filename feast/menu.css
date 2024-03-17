@@ -191,7 +191,7 @@ header{
     #menu_modal img{
         width: 75%;
     }
-    #menu_modal_text h4, #menu_modal_text h3{
+    #menu_modal h1, #menu_modal h2, #menu_modal h4, #menu_modal h3{
         text-align: center;
     }
     #menu_modal_text p{

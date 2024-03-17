@@ -48,6 +48,7 @@ header{
     backdrop-filter: blur(2.5px);
     opacity: 0;
     pointer-events: none;
+    text-align: center;
     transition: 0.5s;
 }
 .sm_txt p{
