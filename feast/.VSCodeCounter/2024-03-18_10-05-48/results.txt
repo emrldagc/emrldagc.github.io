@@ -1,0 +1,52 @@
+Date : 2024-03-18 10:05:48
+Directory : c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code
+Total : 25 files,  4096 codes, 372 comments, 218 blanks, all 4686 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| CSS        |          9 |      1,671 |        200 |        121 |      1,992 |
+| JavaScript |         11 |      1,205 |        152 |         53 |      1,410 |
+| HTML       |          4 |      1,162 |         20 |         44 |      1,226 |
+| JSON       |          1 |         58 |          0 |          0 |         58 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                  | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                     |         25 |      4,096 |        372 |        218 |      4,686 |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                              | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\about.css          | CSS        |        106 |         24 |         10 |        140 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\about.html         | HTML       |        282 |          5 |         11 |        298 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\about.js           | JavaScript |          6 |          4 |          2 |         12 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\events.css         | CSS        |         92 |         17 |          6 |        115 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\events.html        | HTML       |        311 |          5 |         11 |        327 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\events.js          | JavaScript |        179 |         32 |         10 |        221 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\gallery.css        | CSS        |        124 |         16 |          7 |        147 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\gallery.js         | JavaScript |        151 |         14 |          6 |        171 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\galleryItems.json  | JSON       |         58 |          0 |          0 |         58 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\general.css        | CSS        |        283 |         45 |         21 |        349 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\general.js         | JavaScript |          5 |          2 |          0 |          7 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\home.css           | CSS        |        206 |         32 |         17 |        255 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\home.html          | HTML       |        345 |          5 |         12 |        362 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\home.js            | JavaScript |        152 |         19 |         15 |        186 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\manager-gallery.js | JavaScript |         90 |         30 |          3 |        123 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\manager-menu.js    | JavaScript |        257 |         11 |          4 |        272 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\menu.css           | CSS        |        225 |         30 |         18 |        273 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\menu.html          | HTML       |        224 |          5 |         10 |        239 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\menu.js            | JavaScript |        147 |         17 |          4 |        168 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\navigation.css     | CSS        |        294 |         29 |         20 |        343 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\navigation.js      | JavaScript |         49 |          3 |          4 |         56 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\reservation.css    | CSS        |        315 |          7 |         19 |        341 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\reservation.js     | JavaScript |        147 |         20 |          4 |        171 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\scrollAnim.css     | CSS        |         26 |          0 |          3 |         29 |
+| c:\Users\govai\Documents\EMRLD\Projects\Internal\Feast\Source Code\scrollAnim.js      | JavaScript |         22 |          0 |          1 |         23 |
+| Total                                                                                 |            |      4,096 |        372 |        218 |      4,686 |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
