@@ -82,7 +82,7 @@ class eventSlider{
                 this.currentId++;
                 this.selectSlide();
             }
-        }, 15000);
+        }, 10000);
     }
     stopAutoScroll(){
         clearInterval(this.autoscroll);

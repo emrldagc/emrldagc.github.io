@@ -1,4 +1,61 @@
-let galleryItemObjs = []
+let galleryItemObjs = [
+    {
+        src : "images/home/home_hero.webp",
+        alt : ""
+    },
+    {
+        src : "images/Menu/menu_banner.webp",
+        alt : ""
+    },
+    {
+        src : "images/events/events-banner.webp",
+        alt : ""
+    },
+    {
+        src : "images/events/private_dining/private_dining_1.webp",
+        alt : ""
+    },
+    {
+        src : "images/events/wedding/wedding_1.webp",
+        alt : ""
+    },
+    {
+        src : "images/events/gala/gala_1.webp",
+        alt : ""
+    },
+    {
+        src : "images/events/awards/awards_1.webp",
+        alt : ""
+    },
+    {
+        src : "images/home/home_hero.webp",
+        alt : ""
+    },
+    {
+        src : "images/Menu/menu_banner.webp",
+        alt : ""
+    },
+    {
+        src : "images/events/events-banner.webp",
+        alt : ""
+    },
+    {
+        src : "images/events/private_dining/private_dining_1.webp",
+        alt : ""
+    },
+    {
+        src : "images/events/wedding/wedding_1.webp",
+        alt : ""
+    },
+    {
+        src : "images/events/gala/gala_1.webp",
+        alt : ""
+    },
+    {
+        src : "images/events/awards/awards_1.webp",
+        alt : ""
+    }
+]
 //edit variables
 const GalleryEditModal = document.getElementById("gallery_edit_modal");
 const GEMSrc = document.getElementById("gi_edit_src");
@@ -19,77 +76,7 @@ let GIClLoaded = false;
 //load variables
 let GIDoneLoading = false;
 
-//save
-function saveGI(){
-    galleryItemObjs = JSON.stringify(galleryItemObjs);
-    localStorage.setItem("galleryItems.json", galleryItemObjs);
-}
-
-//load
-function loadGI(){
-    // Create a new XMLHttpRequest object
-    let xhr = new XMLHttpRequest();
-    // Define the file path
-    let file = 'galleryItems.json';
-    // Open the file
-    xhr.open('GET', file, true);
-    // Set the response type to JSON
-    xhr.responseType = 'json';
-    // When the file is loaded successfully
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            // Parse the JSON response
-            galleryItemObjs = xhr.response;
-            displayGI();
-            saveGI();
-        }
-        else {
-            // Error handling
-            console.error('Failed to load JSON file:', xhr.status);
-        }
-    };
-    // If an error occurs during the request
-    xhr.onerror = function() {
-      console.error('Error occurred while reading the file.');
-    };
-    // Send the request
-    xhr.send();
-}
-
 //display
-function displayGalleryManager(){
-    if(mnGalleryContent != null){
-        //delete preexisting elements
-        for (let i = 0; i < MnGIEls.length; i++) {
-            if(MnGIEls[i].id != "blank_mn_gi")
-                mnGalleryContent.removeChild(MnGIEls[i]);   
-        }
-        //create new elements
-        for (let i = 0; i < galleryItemObjs.length; i++) {
-            let currentGIObj = galleryItemObjs[i];
-            //create and remove id
-            let newMnGI = blankMnGI.cloneNode(true);
-            newMnGI.id = "";
-            //fetch needed elements
-            let newMnGIImg = newMnGI.querySelector("img");
-            let newMNGIDel = newMnGI.querySelector(".gi_delete_btn");
-            let newMNGIEdit = newMnGI.querySelector(".gi_edit_btn");
-            //assign functions
-            newMNGIDel.addEventListener("click", () =>{
-                toggleDM(mnGalleryContent, newMnGI, galleryItemObjs, currentGIObj);
-                saveGI();
-            });
-            newMNGIEdit.addEventListener("click", () =>{
-                toggleGIEdit(currentGIObj);
-            })
-            //assign values
-            newMnGIImg.src = currentGIObj.src;
-            //append
-            mnGalleryContent.append(newMnGI);
-        }
-        MnGIEls = document.querySelectorAll(".gallery_item");
-    }
-}
 function displayGalleryCarousel(){
     if(blankClGI != null){
         //fill carousel
@@ -116,8 +103,4 @@ function displayGalleryCarousel(){
         }
     }
 }
-function displayGI(){
-    displayGalleryManager();
-    displayGalleryCarousel();  
-}
-window.addEventListener("load", () =>{loadGI();})
+window.addEventListener("load", () =>{displayGalleryCarousel();})
