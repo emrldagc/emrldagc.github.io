@@ -212,7 +212,7 @@
 }
 .menu_rf_item{
     display: flex;
-    align-items: start;
+    align-items: center;
     gap: 25px;
 }
 .menu_rf_item img{
@@ -224,7 +224,7 @@
     align-items: start;
 }
 .rf_mi_price{
-    margin: 0;
+    margin-top: 0;
 }
 .rf_mi_description{
     height: 100px;

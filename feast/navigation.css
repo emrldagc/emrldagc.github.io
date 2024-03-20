@@ -284,10 +284,22 @@ footer{
     #nav_menu{
         padding: 10vh 5vw;
         height: 80vh;
-        width: 90vw;
+        width: 65vw;
     }
     #nav_menu.on{
-        left: 0vw;
+        left: 25vw;
+    }
+    /*nav menu - end*/
+}
+
+/*small phone styling*/
+@media(max-width:400px){
+    /*nav menu - start*/
+    #nav_menu{
+        width: 70vw;
+    }
+    #nav_menu.on{
+        left: 20vw;
     }
     /*nav menu - end*/
 }

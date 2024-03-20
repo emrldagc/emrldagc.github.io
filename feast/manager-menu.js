@@ -247,14 +247,12 @@ function displayMenuClient(){
         let newMIElImg = newMIEl.querySelector("img");
         let newMIElName = newMIEl.querySelector(".rf_mi_name");
         let newMIElPrice = newMIEl.querySelector(".rf_mi_price");
-        let newMIElDesc = newMIEl.querySelector(".rf_mi_description");
         let newMIElBtn = newMIEl.querySelector(".mi_btn");
         //assign values
         newMIElBtn.addEventListener("click", () =>{MMDisplay(currentMIObj);})
         newMIElImg.src = currentMIObj.img;
         newMIElName.innerHTML = currentMIObj.name;
         newMIElPrice.innerHTML = "$" + currentMIObj.price;
-        newMIElDesc.innerHTML = currentMIObj.desc;
         if(currentMIObj.category == "appetizer")
             appetizerRfPage.append(newMIEl);
         else if(currentMIObj.category == "lunch")
