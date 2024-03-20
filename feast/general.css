@@ -24,10 +24,6 @@ section.bottomed{
     src: url(fonts/Gotham-Bold.otf);
 }
 @font-face {
-    font-family: "gotham medium";
-    src: url(fonts/Gotham-Medium.otf);
-}
-@font-face {
     font-family: "roboto bold";
     src: url(fonts/Roboto-Bold.ttf);
 }
