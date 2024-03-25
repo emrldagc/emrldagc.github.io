@@ -101,6 +101,7 @@ section.horizontal.reversed{
 .hs_img{
     width: 600px;
     min-width: 600px;
+    aspect-ratio: 5/4;
 }
 /*horizontal section - end*/
 

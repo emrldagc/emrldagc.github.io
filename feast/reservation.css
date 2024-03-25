@@ -217,6 +217,7 @@
 }
 .menu_rf_item img{
     width: calc(35% - (25px/2));
+    aspect-ratio: 1/1;
 }
 .rf_mi_txt{
     display: flex;

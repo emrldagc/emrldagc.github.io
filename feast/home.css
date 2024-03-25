@@ -46,6 +46,7 @@
 .menu_card img{
     position: relative;
     width: 100%;
+    aspect-ratio: 1/1;
     margin-bottom: 15px;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.125));
 }
@@ -255,4 +256,11 @@
 
 /*very narrow phones*/
 @media(max-width:300px){
+    /*testimonials - start*/
+    .testimonial_card{
+        width: 175px;
+        height: auto;
+        aspect-ratio: auto;
+    }
+    /*testimonials - end*/
 }
