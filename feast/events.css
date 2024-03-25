@@ -107,6 +107,10 @@ header{
 
 /*big phone styling*/
 @media(max-width:450px){
+    header{
+        background-image: url(images/events/events-banner_mobile.webp);
+    }
+
     /*event inquiry - start*/
     .singled_input, .doubled_input{
         min-width: 100%;

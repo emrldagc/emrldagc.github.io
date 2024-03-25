@@ -228,6 +228,12 @@ header{
 
 /*big phone styling*/
 @media(max-width:450px){
+    /*header - start*/
+    header{
+        background-image: url(images/Menu/menu_banner_mobile.webp);
+    }
+    /*header - end*/
+
     /*menu modal - start*/    
     #menu_modal{
         height: calc(175vw - 10vw);

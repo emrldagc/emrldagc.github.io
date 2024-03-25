@@ -213,6 +213,9 @@
 /*big phone styling*/
 @media(max-width:450px){
     /*hero section - start*/
+    #hero{
+        background-image: url(images/home/home_hero_mobile.webp);
+    }
     #hero_logo{
         width: 75%;
     }

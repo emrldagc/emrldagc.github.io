@@ -106,6 +106,12 @@ header{
 
 /*big phone styling*/
 @media(max-width:450px){
+    /*header - start*/
+    header{
+        background-image: url(images/home/home_hero_mobile.webp);
+    }
+    /*header - end*/
+
     /*staff - start*/
     #staff_carousel{
         gap: 10px;
