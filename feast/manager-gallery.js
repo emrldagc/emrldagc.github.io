@@ -1,59 +1,59 @@
 let galleryItemObjs = [
     {
         src : "images/home/home_hero.webp",
-        alt : ""
+        alt : "Gallery image"
     },
     {
         src : "images/Menu/menu_banner.webp",
-        alt : ""
+        alt : "Gallery image"
     },
     {
         src : "images/events/events-banner.webp",
-        alt : ""
+        alt : "Gallery image"
     },
     {
         src : "images/events/private_dining/private_dining_1.webp",
-        alt : ""
+        alt : "Gallery image"
     },
     {
         src : "images/events/wedding/wedding_1.webp",
-        alt : ""
+        alt : "Gallery image"
     },
     {
         src : "images/events/gala/gala_1.webp",
-        alt : ""
+        alt : "Gallery image"
     },
     {
         src : "images/events/awards/awards_1.webp",
-        alt : ""
+        alt : "Gallery image"
     },
     {
         src : "images/home/home_hero.webp",
-        alt : ""
+        alt : "Gallery image"
     },
     {
         src : "images/Menu/menu_banner.webp",
-        alt : ""
+        alt : "Gallery image"
     },
     {
         src : "images/events/events-banner.webp",
-        alt : ""
+        alt : "Gallery image"
     },
     {
         src : "images/events/private_dining/private_dining_1.webp",
-        alt : ""
+        alt : "Gallery image"
     },
     {
         src : "images/events/wedding/wedding_1.webp",
-        alt : ""
+        alt : "Gallery image"
     },
     {
         src : "images/events/gala/gala_1.webp",
-        alt : ""
+        alt : "Gallery image"
     },
     {
         src : "images/events/awards/awards_1.webp",
-        alt : ""
+        alt : "Gallery image"
     }
 ]
 //edit variables
@@ -89,6 +89,7 @@ function displayGalleryCarousel(){
             let newClGIImg = newClGI.querySelector("img");
             //assign values
             newClGIImg.src = currentGIObj.src;
+            newClGIImg.alt = currentGIObj.alt;
             //append
             clGalleryContent.append(newClGI);
         }
@@ -99,6 +100,7 @@ function displayGalleryCarousel(){
             //create element
             let newSlImg = document.createElement("img");
             newSlImg.src = currentGIObj.src;
+            newSlImg.alt = currentGIObj.alt;
             gallerySliderContent.append(newSlImg);
         }
     }

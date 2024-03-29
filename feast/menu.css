@@ -151,7 +151,7 @@ header{
 .menu_item{
     width: calc(33.33333% - (50px/3) - 50px);
     padding: 25px;
-    background-color: #efefef;
+    background-color: #dddddd;
     display: flex;
     flex-direction: column;
     justify-content: center;

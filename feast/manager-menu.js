@@ -226,6 +226,7 @@ function displayMenuClient(){
             //assign values
             newMIElBtn.addEventListener("click", () =>{MMDisplay(currentMIObj);})
             newMIElImg.src = currentMIObj.img;
+            newMIElImg.alt = currentMIObj.img;
             newMIElName.innerHTML = currentMIObj.name;
             newMIElPrice.innerHTML = "$" + currentMIObj.price;
             if(currentMIObj.category == "appetizer")
@@ -251,6 +252,7 @@ function displayMenuClient(){
         //assign values
         newMIElBtn.addEventListener("click", () =>{MMDisplay(currentMIObj);})
         newMIElImg.src = currentMIObj.img;
+        newMIElImg.alt = currentMIObj.img;
         newMIElName.innerHTML = currentMIObj.name;
         newMIElPrice.innerHTML = "$" + currentMIObj.price;
         if(currentMIObj.category == "appetizer")
