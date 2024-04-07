@@ -31,7 +31,7 @@ const TCardIdBaseline = TCards.length;
 const TCardLoopFrontThreshold = TCardIdBaseline*2;
 let currentTCardId = TCardIdBaseline;
 let TCGap = 25;
-const TAutoScrollInterval = 10000; //in milliseconds
+const TAutoScrollInterval = 15000; //in milliseconds
 let touchInteraction = false;
 let startTTouchX;
 let deltaTTouchX = 0;

@@ -16,6 +16,9 @@ section.topped{
 section.bottomed{
     padding-bottom: 25vh;
 }
+section.red, footer{
+    background-color: rgb(255, 248, 248);
+}
 /*general - end*/
 
 /*font - start*/
